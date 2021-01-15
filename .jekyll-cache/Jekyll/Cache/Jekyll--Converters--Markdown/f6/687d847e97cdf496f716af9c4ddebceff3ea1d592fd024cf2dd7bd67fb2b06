@@ -1,33 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Booting up my personal Blog</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body class="container">
-    <img class="header" src="/assets/images/header.png" alt="site-header">
-    <nav>
-  
-  <a href="/" >
-    Home
-  </a> 
-  
-  <a href="/blog.html" >
-    Blog
-  </a> 
-  
-  <a href="/about.html" >
-    About
-  </a> 
-  
-  </nav>
-    <br/>
-    <main class="container">
-    <h1>Booting up my personal Blog</h1>
-<p>15 Jan 2021 - Barco van Rhijn</p>
-
-<p>I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.</p>
+I"�<p>I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.</p>
 
 <p>So Here goes….</p>
 
@@ -50,10 +21,4 @@
 <p><code class="language-plaintext highlighter-rouge">![alt text](logo.png "Title")</code></p>
 
 <p>This will render out the image tag with the classes you specified.</p>
-
-<h2 id="ready-set-lauch">Ready Set Lauch</h2>
-<p>Write, Build, Git Push and we’re off to a beautiful friendship.</p>
-
-    </main>
-  </body>
-</html>
+:ET

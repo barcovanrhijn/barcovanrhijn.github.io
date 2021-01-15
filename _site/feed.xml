@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-15T07:53:35+02:00</updated><id>/feed.xml</id><entry><title type="html">Booting up my personal Blog</title><link href="/jekyll/2021/01/15/Blog-Rebooting.html" rel="alternate" type="text/html" title="Booting up my personal Blog" /><published>2021-01-15T00:00:00+02:00</published><updated>2021-01-15T00:00:00+02:00</updated><id>/jekyll/2021/01/15/Blog-Rebooting</id><content type="html" xml:base="/jekyll/2021/01/15/Blog-Rebooting.html">&lt;p&gt;I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-15T10:07:12+02:00</updated><id>/feed.xml</id><entry><title type="html">Booting up my personal Blog</title><link href="/jekyll/2021/01/15/Blog-Rebooting.html" rel="alternate" type="text/html" title="Booting up my personal Blog" /><published>2021-01-15T00:00:00+02:00</published><updated>2021-01-15T00:00:00+02:00</updated><id>/jekyll/2021/01/15/Blog-Rebooting</id><content type="html" xml:base="/jekyll/2021/01/15/Blog-Rebooting.html">&lt;p&gt;I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.&lt;/p&gt;
 
 &lt;p&gt;So Here goes….&lt;/p&gt;
 
@@ -6,10 +6,24 @@
 &lt;p&gt;To get a Github pages site up you need to start a repo with your username.githubpages.com. You’ll find the the &lt;a href=&quot;https://pages.github.com/&quot;&gt; getting started with github pages &lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;can-you-say-jekyll&quot;&gt;Can you say Jekyll?&lt;/h2&gt;
-&lt;p&gt;This is is based of Jekyl which is a Jamstack site framework built with Ruby on Rails. It’s Github’s reccomended default although you can use things like Hugo or others. I like the simplicity of Jekyll which allows for maximum design expression with little fuss.&lt;/p&gt;
+&lt;p&gt;This site is based of Jekyl which is a Jamstack site framework built with Ruby on Rails. It’s Github’s reccomended default although you can use things like Hugo or others. I like the simplicity of Jekyll which allows for maximum design expression with little fuss.&lt;/p&gt;
 
-&lt;h2 id=&quot;where-do-i-put-images&quot;&gt;Where do I put images&lt;/h2&gt;
-&lt;p&gt;Images for the assets&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Jekyll" /><summary type="html">I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.</summary></entry><entry><title type="html">Vanilla PHP</title><link href="/php/2020/08/20/Vanilla-PHP.html" rel="alternate" type="text/html" title="Vanilla PHP" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>/php/2020/08/20/Vanilla-PHP</id><content type="html" xml:base="/php/2020/08/20/Vanilla-PHP.html">&lt;p&gt;A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.&lt;/p&gt;
+&lt;p&gt;Jekyl speaks HTML, Markdown, JSON and more. It’s a fantastic way to get technical content up if you don’t need a backend.&lt;/p&gt;
+
+&lt;h2 id=&quot;where-do-i-put-images-in-jekyll&quot;&gt;Where do I put images in Jekyll&lt;/h2&gt;
+&lt;p&gt;Under the main Assets folder. The _site folder is generated on build in Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-classes-in-jekyll-markdown&quot;&gt;Adding classes in Jekyll Markdown&lt;/h2&gt;
+
+&lt;p&gt;Just add your classes like this
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .rounded .image}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;![alt text](logo.png &quot;Title&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will render out the image tag with the classes you specified.&lt;/p&gt;
+
+&lt;h2 id=&quot;ready-set-lauch&quot;&gt;Ready Set Lauch&lt;/h2&gt;
+&lt;p&gt;Write, Build, Git Push and we’re off to a beautiful friendship.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Jekyll" /><summary type="html">I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.</summary></entry><entry><title type="html">Vanilla PHP</title><link href="/php/2020/08/20/Vanilla-PHP.html" rel="alternate" type="text/html" title="Vanilla PHP" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>/php/2020/08/20/Vanilla-PHP</id><content type="html" xml:base="/php/2020/08/20/Vanilla-PHP.html">&lt;p&gt;A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.&lt;/p&gt;
 
 &lt;p&gt;We started building template engine that could be easily filled out with details to generate brand sites.&lt;/p&gt;
 
