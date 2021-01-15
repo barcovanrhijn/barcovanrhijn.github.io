@@ -1,96 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-12-19T18:11:16+02:00</updated><id>/feed.xml</id><entry><title type="html">Next Post</title><link href="/ruby/2020/12/19/next-post.html" rel="alternate" type="text/html" title="Next Post" /><published>2020-12-19T00:00:00+02:00</published><updated>2020-12-19T00:00:00+02:00</updated><id>/ruby/2020/12/19/next-post</id><content type="html" xml:base="/ruby/2020/12/19/next-post.html">&lt;p&gt;hhh&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Ruby" /><summary type="html">hhh</summary></entry><entry><title type="html">Hello Ruby</title><link href="/ruby/2020/12/18/hello-Ruby.html" rel="alternate" type="text/html" title="Hello Ruby" /><published>2020-12-18T00:00:00+02:00</published><updated>2020-12-18T00:00:00+02:00</updated><id>/ruby/2020/12/18/hello-Ruby</id><content type="html" xml:base="/ruby/2020/12/18/hello-Ruby.html">&lt;p&gt;I’ve been hearing about Ruby for some years. But I’ve been sceptical about the amount of moving parts that are introduced by Ruby in the process of development.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-15T07:50:21+02:00</updated><id>/feed.xml</id><entry><title type="html">Booting up my personal Blog</title><link href="/jekyll/2021/01/15/Blog-Rebooting.html" rel="alternate" type="text/html" title="Booting up my personal Blog" /><published>2021-01-15T00:00:00+02:00</published><updated>2021-01-15T00:00:00+02:00</updated><id>/jekyll/2021/01/15/Blog-Rebooting</id><content type="html" xml:base="/jekyll/2021/01/15/Blog-Rebooting.html">&lt;p&gt;I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.&lt;/p&gt;
 
-&lt;p&gt;But this year I’ve built out a small Project in Laravel that handles Reseller packages and Pricing for B2B it feels familiar coming from the Javascript side of things. I also disovered that Laravel sort of combines ideas from JS and Ruby.&lt;/p&gt;
+&lt;p&gt;So Here goes….&lt;/p&gt;
 
-&lt;p&gt;One of the Developers I follow online mentioned what they’ve been doing on Ruby and I was intrigued to take a look. Well I spent a today and learned the basics.&lt;/p&gt;
+&lt;h2 id=&quot;github-meet-jekyl&quot;&gt;Github, Meet Jekyl&lt;/h2&gt;
+&lt;p&gt;To get a Github pages site up you need to start a repo with your username.githubpages.com. You’ll find the the &lt;a href=&quot;https://pages.github.com/&quot;&gt; getting started with github pages &lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;So far I like that Ruby is similar in it’s abillity to scaffold various parts of an application. After learning how that works it no longer seems like a Ruby Project can spin out of control.&lt;/p&gt;
+&lt;h2 id=&quot;can-you-say-jekyll&quot;&gt;Can you say Jekyll?&lt;/h2&gt;
+&lt;p&gt;This is is based of Jekyl which is a Jamstack site framework built with Ruby on Rails. It’s Github’s reccomended default although you can use things like Hugo or others. I like the simplicity of Jekyll which allows for maximum design expression with little fuss.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-i-like&quot;&gt;What I like&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;I like how easy CRUD is with Ruby - feels like Laravel.&lt;/li&gt;
-  &lt;li&gt;The stack feels less fragmented than JS stacks do.&lt;/li&gt;
-  &lt;li&gt;The language so far seems enjoyable.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;where-do-i-put-images&quot;&gt;Where do I put images&lt;/h2&gt;
+&lt;p&gt;Images for the assets&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Jekyll" /><summary type="html">I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had.</summary></entry><entry><title type="html">Vanilla PHP</title><link href="/php/2020/08/20/Vanilla-PHP.html" rel="alternate" type="text/html" title="Vanilla PHP" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>/php/2020/08/20/Vanilla-PHP</id><content type="html" xml:base="/php/2020/08/20/Vanilla-PHP.html">&lt;p&gt;A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-i-may-have-to-learn-to-love&quot;&gt;What I may have to learn to love&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Deployement of Ruby projects seem to be a bit more complicated than PHP but not so much more complicated than Node.js apps. I manage several VPS’ running production code. So It’s not insurmountable.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We started building template engine that could be easily filled out with details to generate brand sites.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-i-learned&quot;&gt;What I learned&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Intalling a Ruby Development environment
-Learned that this part of Ruby on Windows can be tricky and how to get it done.&lt;/li&gt;
-  &lt;li&gt;Ruby MVC and Project structure
-The Ruby project Structure is remarkably easy to understand coming from Laravel&lt;/li&gt;
-  &lt;li&gt;Routing with Ruby
-Routing uses&lt;/li&gt;
-  &lt;li&gt;Variables in Ruby
-Ruby variables are just words like in Bash unless you want to increase their scope. Variables passed from controller to page are written @variable&lt;/li&gt;
-  &lt;li&gt;Finding and Using Gems&lt;/li&gt;
-  &lt;li&gt;Defining production vs development gems&lt;/li&gt;
-  &lt;li&gt;Controllers in Ruby
-Controllers are&lt;/li&gt;
-  &lt;li&gt;Migrations and Databases in Ruby&lt;/li&gt;
-  &lt;li&gt;Production v.s. Development configs&lt;/li&gt;
-  &lt;li&gt;Creating CRUD forms in Ruby&lt;/li&gt;
-  &lt;li&gt;Add custom styling to Ruby elements&lt;/li&gt;
-  &lt;li&gt;Use Devise to create login and profile pages&lt;/li&gt;
-  &lt;li&gt;Database Associations&lt;/li&gt;
-  &lt;li&gt;Controllers beyond basic Crud&lt;/li&gt;
-  &lt;li&gt;Deploying Ruby code to git and Heroku&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;I asked to do the front-end generating code. I was inspired by how Atomic Design systems worked and decided to build out a template engine with some overlapping features with Twigg. Since the requirements was that there be no dependancies I could not use Twigg or Handlebars or other such systems. 
+The project consisted of two parts. A UI that was customer facing and centrally manages all the site information and links. And the Template builder which connects to the API and parses the Json into arrays and then outputs this in a template. The API defines several settings that makes the Customer facing builder allow simple UI configurations.&lt;/p&gt;
 
-&lt;p&gt;Planning to build out a first project over the Tomorrow.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Ruby" /><summary type="html">I’ve been hearing about Ruby for some years. But I’ve been sceptical about the amount of moving parts that are introduced by Ruby in the process of development.</summary></entry><entry><title type="html">HTML - Part2</title><link href="/html/2019/01/16/HTML-Part-2.html" rel="alternate" type="text/html" title="HTML - Part2" /><published>2019-01-16T00:00:00+02:00</published><updated>2019-01-16T00:00:00+02:00</updated><id>/html/2019/01/16/HTML-Part-2</id><content type="html" xml:base="/html/2019/01/16/HTML-Part-2.html">&lt;p&gt;It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.&lt;/p&gt;
+&lt;p&gt;I discovered that some of what I wanted to do to make the templating more flexible is known as Meta programming. I discussed ways we could free the data model by moving to Json in Mysql or Mongodb. Because after the first few days it became apparent that each new change.&lt;/p&gt;
 
-&lt;p&gt;Check Radio Buttons and Checkboxes by Default
-Create a Set of Checkboxes
-Create a Set of Radio Buttons
-Use HTML5 to Require a Field
-Add a Submit Button to a Form
-Create a Form Element
-Add Placeholder Text to a Text Field
-Create a Text Field
-Create an Ordered List
-Create a Bulleted Unordered List&lt;/p&gt;
-&lt;h1 id=&quot;turn-an-image-into-a-link&quot;&gt;Turn an Image into a Link&lt;/h1&gt;
-&lt;p&gt;Images make great links. Used to do this with buttons on web pages in the days of CSS1. But now days I like CSS Buttons.&lt;/p&gt;
-&lt;h1 id=&quot;make-dead-links-using-the-hash-symbol&quot;&gt;Make Dead Links Using the Hash Symbol&lt;/h1&gt;
-&lt;p&gt;Fab trick I use often to mock up links and navs before I have all the details.&lt;/p&gt;
-&lt;h1 id=&quot;nest-an-anchor-element-within-a-paragraph&quot;&gt;Nest an Anchor Element within a Paragraph&lt;/h1&gt;
-&lt;p&gt;Let the Nesting begin. Something I use almost daily when I build out content for a page. It’s a staple of well built sites.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="HTML" /><summary type="html">It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.</summary></entry><entry><title type="html">HTML Part</title><link href="/html/2019/01/15/HTML-Part-1.html" rel="alternate" type="text/html" title="HTML Part" /><published>2019-01-15T00:00:00+02:00</published><updated>2019-01-15T00:00:00+02:00</updated><id>/html/2019/01/15/HTML-Part-1</id><content type="html" xml:base="/html/2019/01/15/HTML-Part-1.html">&lt;h2 id=&quot;refreshing-and-documenting-my-html-skills&quot;&gt;Refreshing and documenting my HTML skills&lt;/h2&gt;
-&lt;p&gt;I decided to sign up for FreeCodeCamp to fill out any gaps in my Front End design skills. Been using several resources around the web while building customer and internal projects. But there has never been a way for me to Shocase what I know. Plus I think it may be high time I run through everything from top to bottom. I know much of this will be a review, but I’ve seen how learning, then sharing deepens knowledge. My first day has been a great review on some things I know well.&lt;/p&gt;
+&lt;p&gt;In the process of doing the work I decided to learn how to build unit tests in PHP. I’ve just touched on the basics of doing this in Javascript after what I’d learned in FreeCodeCamp. But I’d not used this in PHP yet. In the past I’d mostly customized PHP code or written plugins which did not have enough code to make Unit tests a viable option. 
+When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this.&lt;/p&gt;
 
-&lt;p&gt;##What I learned today:&lt;/p&gt;
-
-&lt;h1 id=&quot;html-headings&quot;&gt;HTML Headings&lt;/h1&gt;
-&lt;p&gt;Something familiar how to place different heading tags. Good structure is essential to any website. Sizing needs to create flow that’s easy to skim read. This is what most of us do on the web. From a design perspective there are several approaches to this. Using good Typography and Text sizing together helps retain interest. Plus it makes it a whole lot easier to find what you’re looking for. Using H1 and H2 tags carefully is important to the on page SEO of a site if you’re also laying out the content. It’s one reason why I like seperating design and content. Makes the whole process a lot easier.&lt;/p&gt;
-
-&lt;h1 id=&quot;inform-with-the-paragraph-element&quot;&gt;Inform with the Paragraph Element&lt;/h1&gt;
-&lt;p&gt;Paragraph tags are great to seperate text.&lt;/p&gt;
-
-&lt;h1 id=&quot;fill-in-the-blank-with-placeholder-text&quot;&gt;Fill in the Blank with Placeholder Text&lt;/h1&gt;
-&lt;p&gt;Pig latin works a treat for filling out paragraphs to give a sense of how a design will flow once it has actual content. The Kitty pig latin was very cute. Text is placed between the tags naturally.&lt;/p&gt;
-
-&lt;h1 id=&quot;comment--uncomment-html&quot;&gt;Comment &amp;amp; Uncomment HTML&lt;/h1&gt;
-&lt;p&gt;What would the world be without comments.&lt;/p&gt;
-
-&lt;h1 id=&quot;delete-html-elements&quot;&gt;Delete HTML Elements&lt;/h1&gt;
-&lt;p&gt;Select everything from a the opening tag to the closing tag. Hit Delete - Boom.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction-to-html5-elements&quot;&gt;Introduction to HTML5 Elements&lt;/h1&gt;
-&lt;p&gt;HTML5 Elements are so much easier to read and work with than a page of Div’s.&lt;/p&gt;
-
-&lt;p&gt;The main HTML tag is a great way to make the main content of the page more visible to others and Search engines like it too.&lt;/p&gt;
-
-&lt;p&gt;main, header, footer, nav, video, article, section&lt;/p&gt;
-
-&lt;h1 id=&quot;add-images-to-your-website&quot;&gt;Add Images to Your Website&lt;/h1&gt;
-&lt;p&gt;A review of placing an image tag and writing a descriptive alt tag. Decorative images don’t need alt tags. They just make noise on screen readers. Wonder what SEO audits will make of this. Used src= for the image&lt;/p&gt;
-
-&lt;h1 id=&quot;link-to-external-pages-with-anchor-elements&quot;&gt;Link to External Pages with Anchor Elements&lt;/h1&gt;
-&lt;p&gt;target=”_blank” opens up a new tab in the user’s browser. Uses href= for the link.&lt;/p&gt;
-
-&lt;h1 id=&quot;link-to-internal-sections-of-a-page-with-anchor-elements&quot;&gt;Link to Internal Sections of a Page with Anchor Elements&lt;/h1&gt;
-&lt;p&gt;Create links with the id of an element i.e. #navbar to jump to &amp;lt;nav id=”navbar&amp;gt;&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="HTML" /><summary type="html">Refreshing and documenting my HTML skills I decided to sign up for FreeCodeCamp to fill out any gaps in my Front End design skills. Been using several resources around the web while building customer and internal projects. But there has never been a way for me to Shocase what I know. Plus I think it may be high time I run through everything from top to bottom. I know much of this will be a review, but I’ve seen how learning, then sharing deepens knowledge. My first day has been a great review on some things I know well.</summary></entry></feed>
+&lt;p&gt;taking on a Vanilla PHP project for a client. In 3 Weeks I coded up my first php from scratch project in Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with senior PHP developer. The 3 weeks was valuable experience but the partnership was not well matched. When comparing notes I was producing 6months of output in 3weeks compared to the other dev’s output. I had started with a blank canvas and PHP documentation and 5min worth of Sage advice.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="PHP" /><summary type="html">A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</summary></entry></feed>

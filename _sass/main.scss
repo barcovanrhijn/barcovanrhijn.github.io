@@ -1,3 +1,27 @@
+body{
+    background-color: aliceblue;
+}
+main{
+    background-color: lightyellow;
+    min-height: 50vmin;
+}
+
+.header{
+    margin: auto;
+    width: 100%;
+}
+.container {
+    padding: 16px 16px;
+}
+nav {
+    padding: 8px 8px;
+    background-color: teal;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
 .current {
-    color: green;
+    color: yellow;
 }

@@ -5,10 +5,11 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
-  <body>
+  <body class="container">
+    {% include header.html %}
     {% include nav.html %}
     <br/>
-    <main>
+    <main class="container">
     {{ content }}
     </main>
   </body>
