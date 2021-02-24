@@ -7,3 +7,14 @@ title: Home
 I enjoy working in different languages and technologies and work as a fulltime freelancer. 
 <br/>
 This is my personal blog where I share things that I'm thinking about. 
+
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
