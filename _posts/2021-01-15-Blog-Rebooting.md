@@ -5,7 +5,7 @@ author: Barco van Rhijn
 category: Jekyll
 ---
 
-I've been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I've had. 
+I've been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I've had. And to share some of my though process.
 
 So Here goes....
 

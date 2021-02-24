@@ -4,9 +4,9 @@ layout: post
 author: Barco van Rhijn
 category: Ruby
 ---
-I've been hearing about Ruby for some years. But I've been sceptical about the amount of moving parts that are introduced by Ruby in the process of development. 
+I've been hearing about Ruby for some years. But I've been sceptical about the amount of moving parts (Magic) that are introduced by Ruby in the process of development. So this year I decided to test it out for myself in the holidays.
 
-But this year I've built out a small Project in Laravel that handles Reseller packages and Pricing for B2B it feels familiar coming from the Javascript side of things. I also disovered that Laravel sort of combines ideas from JS and Ruby.
+In 2020  I've built out a small Project in Laravel that handles Reseller packages and Pricing for B2B it feels familiar coming from the Javascript side of things. I also disovered that Laravel sort of combines ideas from JS and Ruby.
 
 One of the Developers I follow online mentioned what they've been doing on Ruby and I was intrigued to take a look. Well I spent a today and learned the basics.
 
@@ -18,7 +18,7 @@ So far I like that Ruby is similar in it's abillity to scaffold various parts of
 - The language so far seems enjoyable.
 
 # What I may have to learn to love
-- Deployement of Ruby projects seem to be a bit more complicated than PHP but not so much more complicated than Node.js apps. I manage several VPS' running production code. So It's not insurmountable.
+- Deployement of Ruby projects seem to be a bit more complicated than PHP but not so much more complicated than Node.js apps. I manage several VPS' running production code. So It's not insurmountable to deploy.
 
 # What I learned
 - Intalling a Ruby Development environment
@@ -42,5 +42,4 @@ Controllers are
 - Controllers beyond basic Crud
 - Deploying Ruby code to git and Heroku
 
-Planning to build out a first project over the Tomorrow.
-
+Planning to build out a first project over Tomorrow.

@@ -5,8 +5,7 @@ author: Barco van Rhijn
 category: Git
 ---
 Been looking at version control for some time. I've been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins.
-It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I've looked at other version control systems out there. 
-I've decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.
+It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I've looked at other version control systems out there. I've decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.
 
 Recently had a Grad Student make contact for Internship. He's a friend of a friend which made for a nice warm introduction.
 He's about to finish his degree but has gotten stuck in the Job readiness department. I've been looking at ways for us to colaborate remotely when we can't work in person. 
@@ -15,6 +14,8 @@ I ended up going with Asana, Bitbucket and Slack as our remote work stack. And w
 
 I've recently enjoyed the Atomic design way of thinking. I've got a seperate post on this. It's really broadened my thinking in terms of how I plan out design. Some of the smaller projects like themes for Wordpress sites of small Businesses don't really have the budget to invest in design systems. I think as time goes on more businesses will start to think this way. But right now Small business is stuck in the design, neglect, abandon and redesign cycle. This really alienates end users who really resent having to re-learn how to use a site they love. 
 
-We've taken quite some time going over Wordpress themes and setup for Webdesign. Also moved my Development environment over to Ubuntu from Windows7 after dabbling in Windows8 then 8.1 then 10.
+We've taken quite some time going over Wordpress themes and setup for Webdesign. Also moved my Development environment over to Ubuntu from Windows7 after dabbling in Windows8 then 8.1 then 10. 
 
-So far so good.
+After careful consideration I actually enjoy using Bitbucket it's got more functionality and is more intergrated with Atlassian's Development toolset. It's been fairly easy to onboard an Intern. All it took was writing some walkthroughs and links to relevant docs and we're all set. 
+
+Will be relooking Github again in the future.
