@@ -1,30 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>About</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body class="container">
-    <img class="header" src="/assets/images/header.png" alt="site-header">
-    <nav>
-  
-  <a href="/" >
-    Home
-  </a> 
-  
-  <a href="/blog.html" >
-    Blog
-  </a> 
-  
-  <a href="/about.html" class="current">
-    About
-  </a> 
-  
-  </nav>
-    <br/>
-    <main class="container">
-    <h1 id="about-page">About page</h1>
+I"s<h1 id="about-page">About page</h1>
 <p>Hi My name is Barco van Rhijn.</p>
 
 <p><img src="assets/images/profile2.jpg" alt="alt profile" /></p>
@@ -59,7 +33,4 @@
   <li>Ansible</li>
 </ul>
 
-
-    </main>
-  </body>
-</html>
+:ET

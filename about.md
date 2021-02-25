@@ -9,9 +9,16 @@ Hi My name is Barco van Rhijn.
 
 I'm a Developer that's able to speak geek and human fluently. My Consultative approach is rated highly with customers I do work for. 
 
-I enjoy projects in the eCommerce space and have extensive expeience with several industries inlcluding Healtcare, Ngo, Financial Services, online Retail.  
+If your looking for a Developer I'm available for hire. You can reach out to me on barcovanrhijn@gmail.com
 
-## I've worked with 
+You can view some of my private projects on my Github page https://github.com/barcovanrhijn.
+
+## Skills
+My strongest skills are in PHP and JS (I particularly enjoy VueJS). I'm pushing into becoming a FullStack JS developer. 
+
+Much of time spent expanding skills is invested in expanding my JS skillset. 
+
+### I've worked with 
 - PHP (Vanilla)
 - Laravel
 - Mysql/MariaDb
@@ -28,13 +35,8 @@ I enjoy projects in the eCommerce space and have extensive expeience with severa
 - TypeScript
 - Ansible
 
-My strongest skills are in PHP and JS (I particularly enjoy VueJS). I'm pushing into becoming a FullStack JS developer. 
 
-Much of time spent expanding skills is invested in expanding my JS skillset. 
 
-If your looking for a Developer I'm available for hire. You can reach out to me on barcovanrhijn@gmail.com
-
-You can view some of my private projects on my Github page https://github.com/barcovanrhijn.
 
 
 
