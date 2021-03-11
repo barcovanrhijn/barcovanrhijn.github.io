@@ -13,15 +13,15 @@ My first few days have come with intense pain though. After coding for a few day
 
 And after spending a few days chasing Type errors I decided to dig deeper as there has to be something I missed initially. 
 
-##A few lessons learned
+## A few lessons learned
 
 ###Runtime errors with TS and Ionic sometimes show skewed line numbers. 
 This seems to be a current bug relating to SFC in VueJS. My Termporary work around has been to code with hot reload and fix errors immediately before proceeding. It's a better way of coding that leads to better productivity any way. 
 
-###Git is your friend
+### Git is your friend
 When line numbers go fuzzy and minutes go by. It's often easier to revert a small change and start it again. Since we've got git might as well put it to good use.
 
-###Types are easy
+### Types are easy
 The fundimentals of Types are not hard. But you need to give you brain some time to absorb the implications in code. 
 
 Most of TS is really just JS and you can actually partially impliment TS in a project.
