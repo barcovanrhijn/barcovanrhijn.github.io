@@ -33,7 +33,6 @@ Much of time spent expanding skills is invested in expanding my JS skillset.
 - Bootstrap
 - Ionic (Android & PWA is my current focus)
 - TypeScript
-- Ansible
 
 
 
