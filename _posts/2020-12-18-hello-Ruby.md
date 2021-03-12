@@ -4,9 +4,9 @@ layout: post
 author: Barco van Rhijn
 category: Ruby
 ---
-I've been hearing about Ruby for some years. But I've been skeptical about the amount of moving parts (Magic) that are introduced by Ruby in the process of development. So this year I decided to test it out for myself in the holidays.
+I've been hearing about Ruby on Rails for some years. But I've been skeptical about the amount of moving parts (Magic) that are introduced by Ruby and Rails in the process of development. So this year I decided to test it out for myself in the holidays.
 
-In 2020 I've built out a small Project in Laravel that handles Reseller packages and Pricing for B2B it feels familiar coming from the Javascript side of things. I also discovered that Laravel sort of combines ideas from JS and Ruby.
+In 2020 I've built out a small Project in Laravel that handles Reseller packages and Pricing for B2B. It feels familiar coming from the Javascript side of things. I also discovered that Laravel combines ideas from JS and Ruby.
 
 One of the Developers I follow online mentioned what they've been doing on Ruby and I was intrigued to take a look. Well I spent a today and learned the basics.
 
@@ -44,3 +44,5 @@ Controllers are
 
 # Wrap up
 Getting my feet wet with Ruby has been a good experience that has broadened my thinking. I love how simple the syntax is. And I'm looking forward to use some of the insights gained in other languages.
+
+I may just build out a next personal project in Ruby for fun.
