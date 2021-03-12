@@ -26,7 +26,7 @@ My strongest skills are
 
 Much of time spent expanding skills is invested in expanding my JS skillset. 
 
-### I've used 
+## I've used 
 - PHP (Vanilla)
 - Laravel
 - Mysql/MariaDb
