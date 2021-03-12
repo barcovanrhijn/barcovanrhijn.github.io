@@ -5,8 +5,6 @@ author: Barco van Rhijn
 category: Design
 ---
 
-# Atomic Design
-
 I’ve recently enjoyed learning about Atomic design. It’s really broadened my thinking in terms of how I plan out design. 
 
 Some of the smaller projects like themes for Wordpress sites of small Businesses don’t really have the budget to invest in design systems. 

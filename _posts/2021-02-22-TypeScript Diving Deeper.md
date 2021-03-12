@@ -4,7 +4,6 @@ layout: post
 author: Barco van Rhijn
 category: TypeScript
 ---
-# Delving into Typescript
 
 ## Ionic meets VueJs
 

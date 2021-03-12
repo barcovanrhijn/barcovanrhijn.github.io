@@ -4,7 +4,6 @@ layout: post
 author: Barco van Rhijn
 category: Git
 ---
-# Bitbucket vs Git 
 
 Been looking at version control for some time. I’ve been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins. 
 

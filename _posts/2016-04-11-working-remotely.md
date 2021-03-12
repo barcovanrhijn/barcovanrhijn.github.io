@@ -5,8 +5,6 @@ author: Barco van Rhijn
 category: workflow
 ---
 
-# Working Remotely
-
 A family crisis pushed me into moving to fully remote work for the first time in 2014. 
 
 After some initial planning I've realized that I could actually pull it off without significant impact on my current customers and contracts. 

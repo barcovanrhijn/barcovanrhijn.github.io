@@ -4,8 +4,6 @@ layout: post
 author: Barco van Rhijn
 category: PHP
 ---
-# Vanilla PHP
-
 A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard. 
 
 ## Our Goal

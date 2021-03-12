@@ -4,7 +4,6 @@ layout: post
 author: Barco van Rhijn
 category: Email
 ---
-# Email Template Design
 
 Email template design has always been a particularly tricky spot when it comes to mail client support.
 
