@@ -7,7 +7,7 @@ category: PHP
 A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard. 
 
 ## Our Goal
-Build a template engine and Cms that work together through an Api connection.
+Build a [template engine]{https://github.com/barcovanrhijn/sitebuilder} and Cms that work together through an Api connection.
 
 The idea was building template engine that could be easily filled out with details to generate brand sites. 
 
@@ -48,9 +48,6 @@ In the past I'd mostly customized PHP code or written small Wordpress plugins wh
 
 When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this. 
 
-## Wrap up
-In 3 Weeks I coded up my Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with Senior PHP developer. 
-
 ## Lessons learned
 
 The project contributed valuable experience but the partnership was not well matched. 
@@ -68,7 +65,10 @@ I do this gladly but was let down by the nature of our agreement.
 For future projects I'd favor an hourly fee or fixed monthly fee.
 
 ## Wrap up
+
+In 3 Weeks I coded up my Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with Senior PHP developer. 
+
 I had started with a blank canvas and PHP documentation and 5min worth of Sage advice on how we'd structure the app.
 
-All in all the project could be refined a lot but I'm pretty pleased with the outcome given how short the development time-frame was. 
+All in all the project could be refined a lot but I'm [pretty pleased with the outcome](https://github.com/barcovanrhijn/sitebuilder) given how short the development time-frame was. 
 
