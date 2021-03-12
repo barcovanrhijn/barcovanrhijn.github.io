@@ -11,6 +11,10 @@ I discovered recently that Ionic have made VueJs quite a priority on their devel
 
 I've always liked the concise syntax to VueJs over ReactJs so I decided to give the two a go together.
 
+Some early previews of the app working with working API intergration.
+![alt Work Picking Screen](assets/images/picking-screen.png)
+![alt Work Overview](assets/images/screenshot_2021-01-18-app.png)
+
 ## Ionic Vue comes with TS
 So with VueJS and Ionic came a recommendation to keep Typescript. And so my journey began Mid Jan 2021 with types. 
 
