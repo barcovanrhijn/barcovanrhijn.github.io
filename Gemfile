@@ -5,7 +5,6 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "barcovanrhijn.github.io" }
 
 # gem "rails"
-source "https://rubygems.org"
 
 gem "jekyll"
 

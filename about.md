@@ -7,32 +7,40 @@ Hi My name is Barco van Rhijn.
 
 ![alt profile](assets/images/profile2.jpg)
 
-I'm a Developer that's able to speak geek and human fluently. My Consultative approach is rated highly with customers I do work for. 
+I'm a Freelance Developer that's able to speak geek and human fluently. My Consultative approach is rated highly with customers I do work for. 
 
 If your looking for a Developer I'm available for hire. You can reach out to me on barcovanrhijn@gmail.com
 
-You can view some of my private projects on my Github page https://github.com/barcovanrhijn.
+You can view some of my spare time projects on my Github page https://github.com/barcovanrhijn. 
+
+I often post some insights gleaned from paid work on this blog. 
 
 ## Skills
-My strongest skills are in PHP and JS (I particularly enjoy VueJS). I'm pushing into becoming a FullStack JS developer. 
+My strongest skills are
+- PHP
+- JS 
+- CSS3
+- SASS
+- Project management
+- Communication
 
 Much of time spent expanding skills is invested in expanding my JS skillset. 
 
-### I've worked with 
+### I've used 
 - PHP (Vanilla)
 - Laravel
 - Mysql/MariaDb
 - Python3
 - Bash
-- JS 
-- VueJs
-- ReactJs
-- Ruby on Rails
+- JS (Vanilla)
+- VueJs 
+- ReactJs 
+- NodeJs 
 - CSS3
 - SASS
 - Bootstrap
 - Ionic (Android & PWA is my current focus)
-- TypeScript
+- TypeScript 
 
 
 

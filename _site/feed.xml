@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-25T02:03:13+02:00</updated><id>/feed.xml</id><entry><title type="html">Delving into TypeScript - first impressions</title><link href="/typescript/2021/02/22/TypeScript-Diving-Deeper.html" rel="alternate" type="text/html" title="Delving into TypeScript - first impressions" /><published>2021-02-22T00:00:00+02:00</published><updated>2021-02-22T00:00:00+02:00</updated><id>/typescript/2021/02/22/TypeScript%20Diving%20Deeper</id><content type="html" xml:base="/typescript/2021/02/22/TypeScript-Diving-Deeper.html">&lt;p&gt;I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-25T10:51:36+02:00</updated><id>/feed.xml</id><entry><title type="html">Delving into TypeScript - first impressions</title><link href="/typescript/2021/02/22/TypeScript-Diving-Deeper.html" rel="alternate" type="text/html" title="Delving into TypeScript - first impressions" /><published>2021-02-22T00:00:00+02:00</published><updated>2021-02-22T00:00:00+02:00</updated><id>/typescript/2021/02/22/TypeScript%20Diving%20Deeper</id><content type="html" xml:base="/typescript/2021/02/22/TypeScript-Diving-Deeper.html">&lt;p&gt;I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.&lt;/p&gt;
 
 &lt;p&gt;So with VueJS and Ionic came a recommendation to keep Typescript. And my journey began Mid Jan 2021 with types. It’s not been all love at first bite but after delving into a 60min carsh course I’ve been able to survive the first few days. The promised gains seem worth the pain.&lt;/p&gt;
 
@@ -125,73 +125,108 @@ The project consisted of two parts. A UI that was customer facing and centrally 
 &lt;p&gt;In the process of doing the work I decided to learn how to build unit tests in PHP. I’ve just touched on the basics of doing this in Javascript after what I’d learned in FreeCodeCamp. But I’d not used this in PHP yet. In the past I’d mostly customized PHP code or written plugins which did not have enough code to make Unit tests a viable option. 
 When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this.&lt;/p&gt;
 
-&lt;p&gt;taking on a Vanilla PHP project for a client. In 3 Weeks I coded up my first php from scratch project in Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with senior PHP developer. The 3 weeks was valuable experience but the partnership was not well matched. When comparing notes I was producing 6months of output in 3weeks compared to the other dev’s output. I had started with a blank canvas and PHP documentation and 5min worth of Sage advice.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="PHP" /><summary type="html">A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</summary></entry><entry><title type="html">HTML - Part2</title><link href="/html/2019/01/16/HTML-Part-2.html" rel="alternate" type="text/html" title="HTML - Part2" /><published>2019-01-16T00:00:00+02:00</published><updated>2019-01-16T00:00:00+02:00</updated><id>/html/2019/01/16/HTML-Part-2</id><content type="html" xml:base="/html/2019/01/16/HTML-Part-2.html">&lt;p&gt;It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.&lt;/p&gt;
+&lt;p&gt;taking on a Vanilla PHP project for a client. In 3 Weeks I coded up my first php from scratch project in Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with senior PHP developer. The 3 weeks was valuable experience but the partnership was not well matched. When comparing notes I was producing 6months of output in 3weeks compared to the other dev’s output. I had started with a blank canvas and PHP documentation and 5min worth of Sage advice.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="PHP" /><summary type="html">A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</summary></entry><entry><title type="html">Html Part 5</title><link href="/2020/01/19/HTML-Part-5.html" rel="alternate" type="text/html" title="Html Part 5" /><published>2020-01-19T00:00:00+02:00</published><updated>2020-01-19T00:00:00+02:00</updated><id>/2020/01/19/HTML-Part-5</id><content type="html" xml:base="/2020/01/19/HTML-Part-5.html">&lt;p&gt;Make Screen Reader Navigation Easier with the header Landmark		Jan 19, 2019
+Wrap Content in the article Element		Jan 19, 2019
+Improve Chart Accessibility with the figure Element		Jan 19, 2019
+Improve Accessibility of Audio Content with the audio Element		Jan 19, 2019
+Make Screen Reader Navigation Easier with the footer Landmark		Jan 19, 2019
+Make Screen Reader Navigation Easier with the nav Landmark		Jan 19, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html">Make Screen Reader Navigation Easier with the header Landmark Jan 19, 2019 Wrap Content in the article Element Jan 19, 2019 Improve Chart Accessibility with the figure Element Jan 19, 2019 Improve Accessibility of Audio Content with the audio Element Jan 19, 2019 Make Screen Reader Navigation Easier with the footer Landmark Jan 19, 2019 Make Screen Reader Navigation Easier with the nav Landmark Jan 19, 2019</summary></entry><entry><title type="html">Js 2</title><link href="/2019/08/13/JS-2.html" rel="alternate" type="text/html" title="Js 2" /><published>2019-08-13T00:00:00+02:00</published><updated>2019-08-13T00:00:00+02:00</updated><id>/2019/08/13/JS-2</id><content type="html" xml:base="/2019/08/13/JS-2.html">&lt;p&gt;Storing Values with the Assignment Operator		Aug 13, 2019
+Declare JavaScript Variables		Aug 13, 2019
+Comment Your JavaScript Code		Aug 13, 2019
+Appending Variables to Strings		Aug 13, 2019
+Constructing Strings with Variables		Aug 13, 2019
+Concatenating Strings with the Plus Equals Operator		Aug 13, 2019
+Concatenating Strings with Plus Operator		Aug 13, 2019
+Quoting Strings with Single Quotes		Aug 13, 2019
+Escaping Literal Quotes in Strings		Aug 13, 2019
+Declare String Variables		Aug 13, 2019
+Compound Assignment With Augmented Division		Aug 13, 2019
+Compound Assignment With Augmented Multiplication		Aug 13, 2019
+Compound Assignment With Augmented Subtraction		Aug 13, 2019
+Compound Assignment With Augmented Addition		Aug 13, 2019
+Finding a Remainder in JavaScript		Aug 13, 2019
+Understanding Case Sensitivity in Variables		Aug 13, 2019
+Understanding Uninitialized Variables		Aug 13, 2019
+Initializing Variables with the Assignment Operator		Aug 13, 2019
+Manipulate Arrays With unshift()		Aug 13, 2019
+Manipulate Arrays With shift()		Aug 13, 2019
+Manipulate Arrays With push()		Aug 13, 2019
+Access Multi-Dimensional Arrays With Indexes		Aug 13, 2019
+Modify Array Data With Indexes		Aug 13, 2019
+Access Array Data with Indexes		Aug 13, 2019
+Nest one Array within Another Array		Aug 13, 2019
+Store Multiple Values in one Variable using JavaScript Arrays		Aug 13, 2019
+Word Blanks		Aug 13, 2019
+Use Bracket Notation to Find the Nth-to-Last Character in a String		Aug 13, 2019
+Use Bracket Notation to Find the Last Character in a String		Aug 13, 2019
+Use Bracket Notation to Find the Nth Character in a String		Aug 13, 2019
+Understand String Immutability		Aug 13, 2019
+Use Bracket Notation to Find the First Character in a String		Aug 13, 2019
+Find the Length of a String		Aug 13, 2019
+Comparison with the Strict Equality Operator		Aug 13, 2019
+Comparison with the Equality Operator		Aug 13, 2019
+Use Conditional Logic with If Statements		Aug 13, 2019
+Understanding Boolean Values		Aug 13, 2019
+Stand in Line		Aug 13, 2019
+Assignment with a Returned Value		Aug 13, 2019
+Manipulate Arrays With pop()		Aug 13, 2019
+Understanding Undefined Value returned from a Function		Aug 13, 2019
+Return a Value from a Function with Return		Aug 13, 2019
+Global vs. Local Scope in Functions		Aug 13, 2019
+Local Scope and Functions		Aug 13, 2019
+Global Scope and Functions		Aug 13, 2019
+Passing Values to Functions with Arguments		Aug 13, 2019
+Write Reusable JavaScript with Functions		Aug 13, 2019
+Shopping List		Aug 13, 2019
+Selecting from Many Options with Switch Statements		Aug 13, 2019
+Golf Code		Aug 13, 2019
+Chaining If Else Statements		Aug 13, 2019
+Logical Order in If Else Statements		Aug 13, 2019
+Introducing Else If Statements		Aug 13, 2019
+Introducing Else Statements		Aug 13, 2019
+Comparisons with the Logical Or Operator		Aug 13, 2019
+Comparisons with the Logical And Operator		Aug 13, 2019
+Comparison with the Less Than Or Equal To Operator		Aug 13, 2019
+Comparison with the Less Than Operator		Aug 13, 2019
+Comparison with the Greater Than Or Equal To Operator		Aug 13, 2019
+Comparison with the Greater Than Operator		Aug 13, 2019
+Comparison with the Strict Inequality Operator		Aug 13, 2019
+Comparison with the Inequality Operator		Aug 13, 2019
+Practice comparing different values		Aug 13, 2019
+Testing Objects for Properties		Aug 13, 2019
+Using Objects for Lookups		Aug 13, 2019
+Delete Properties from a JavaScript Object		Aug 13, 2019
+Add New Properties to a JavaScript Object		Aug 13, 2019
+Updating Object Properties		Aug 13, 2019
+Accessing Object Properties with Variables		Aug 13, 2019
+Accessing Object Properties with Bracket Notation		Aug 13, 2019
+Accessing Object Properties with Dot Notation		Aug 13, 2019
+Build JavaScript Objects		Aug 13, 2019
+Counting Cards		Aug 13, 2019
+Return Early Pattern for Functions		Aug 13, 2019
+Returning Boolean Values from Functions		Aug 13, 2019
+Replacing If Else Chains with Switch		Aug 13, 2019
+Multiple Identical Options in Switch Statements		Aug 13, 2019
+Adding a Default Option in Switch Statements		Aug 13, 2019
+Escape Sequences in Strings		Aug 13, 2019
+Iterate Through an Array with a For Loop		Aug 13, 2019
+Count Backwards With a For Loop		Aug 13, 2019
+Iterate Odd Numbers With a For Loop		Aug 13, 2019
+Iterate with JavaScript For Loops		Aug 13, 2019
+Iterate with JavaScript While Loops		Aug 13, 2019
+Record Collection		Aug 13, 2019
+Accessing Nested Arrays		Aug 13, 2019
+Accessing Nested Objects		Aug 13, 2019
+Manipulating Complex Objects		Aug 13, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Javascript</title><link href="/javascript/2019/08/01/JS.html" rel="alternate" type="text/html" title="Javascript" /><published>2019-08-01T00:00:00+02:00</published><updated>2019-08-01T00:00:00+02:00</updated><id>/javascript/2019/08/01/JS</id><content type="html" xml:base="/javascript/2019/08/01/JS.html">&lt;p&gt;So while digging into React I’ve decided to ensure I have as complete an understading of JS as possible.&lt;/p&gt;
 
-&lt;p&gt;Still reviewing things I know well.&lt;/p&gt;
+&lt;p&gt;So I’m digging into JS fundimentals&lt;/p&gt;
 
-&lt;p&gt;#Forms
--Check Radio Buttons and Checkboxes by Default
--Create a Set of Checkboxes
--Create a Set of Radio Buttons
--Use HTML5 to Require a Field
--Add a Submit Button to a Form
--Create a Form Element
--Add Placeholder Text to a Text Field
--Create a Text Field
--Create an Ordered List
--Create a Bulleted Unordered List&lt;/p&gt;
-
-&lt;h1 id=&quot;turn-an-image-into-a-link&quot;&gt;Turn an Image into a Link&lt;/h1&gt;
-&lt;p&gt;Images make great links. Used to do this with buttons on web pages in the days of CSS1. But now days I like CSS Buttons.&lt;/p&gt;
-&lt;h1 id=&quot;make-dead-links-using-the-hash-symbol&quot;&gt;Make Dead Links Using the Hash Symbol&lt;/h1&gt;
-&lt;p&gt;Fab trick I use often to mock up links and navs before I have all the details.&lt;/p&gt;
-&lt;h1 id=&quot;nest-an-anchor-element-within-a-paragraph&quot;&gt;Nest an Anchor Element within a Paragraph&lt;/h1&gt;
-&lt;p&gt;Let the Nesting begin. Something I use almost daily when I build out content for a page. It’s a staple of well built sites.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="HTML" /><summary type="html">It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.</summary></entry><entry><title type="html">HTML Part</title><link href="/html/2019/01/15/HTML-Part-1.html" rel="alternate" type="text/html" title="HTML Part" /><published>2019-01-15T00:00:00+02:00</published><updated>2019-01-15T00:00:00+02:00</updated><id>/html/2019/01/15/HTML-Part-1</id><content type="html" xml:base="/html/2019/01/15/HTML-Part-1.html">&lt;h2 id=&quot;refreshing-and-documenting-my-html-skills&quot;&gt;Refreshing and documenting my HTML skills&lt;/h2&gt;
-&lt;p&gt;I decided to sign up for FreeCodeCamp to fill out any gaps in my Front End design skills. Been using several resources around the web while building customer and internal projects. But there has never been a way for me to Shocase what I know. Plus I think it may be high time I run through everything from top to bottom. I know much of this will be a review, but I’ve seen how learning, then sharing deepens knowledge. My first day has been a great review on some things I know well.&lt;/p&gt;
-
-&lt;p&gt;##What I learned today:&lt;/p&gt;
-
-&lt;h1 id=&quot;html-headings&quot;&gt;HTML Headings&lt;/h1&gt;
-&lt;p&gt;Something familiar how to place different heading tags. Good structure is essential to any website. Sizing needs to create flow that’s easy to skim read. This is what most of us do on the web. From a design perspective there are several approaches to this. Using good Typography and Text sizing together helps retain interest. Plus it makes it a whole lot easier to find what you’re looking for. Using H1 and H2 tags carefully is important to the on page SEO of a site if you’re also laying out the content. It’s one reason why I like seperating design and content. Makes the whole process a lot easier.&lt;/p&gt;
-
-&lt;h1 id=&quot;inform-with-the-paragraph-element&quot;&gt;Inform with the Paragraph Element&lt;/h1&gt;
-&lt;p&gt;Paragraph tags are great to seperate text.&lt;/p&gt;
-
-&lt;h1 id=&quot;fill-in-the-blank-with-placeholder-text&quot;&gt;Fill in the Blank with Placeholder Text&lt;/h1&gt;
-&lt;p&gt;Pig latin works a treat for filling out paragraphs to give a sense of how a design will flow once it has actual content. The Kitty pig latin was very cute. Text is placed between the tags naturally.&lt;/p&gt;
-
-&lt;h1 id=&quot;comment--uncomment-html&quot;&gt;Comment &amp;amp; Uncomment HTML&lt;/h1&gt;
-&lt;p&gt;What would the world be without comments.&lt;/p&gt;
-
-&lt;h1 id=&quot;delete-html-elements&quot;&gt;Delete HTML Elements&lt;/h1&gt;
-&lt;p&gt;Select everything from a the opening tag to the closing tag. Hit Delete - Boom.&lt;/p&gt;
-
-&lt;h1 id=&quot;introduction-to-html5-elements&quot;&gt;Introduction to HTML5 Elements&lt;/h1&gt;
-&lt;p&gt;HTML5 Elements are so much easier to read and work with than a page of Div’s.&lt;/p&gt;
-
-&lt;p&gt;The main HTML tag is a great way to make the main content of the page more visible to others and Search engines like it too.&lt;/p&gt;
-
-&lt;p&gt;main, header, footer, nav, video, article, section&lt;/p&gt;
-
-&lt;h1 id=&quot;add-images-to-your-website&quot;&gt;Add Images to Your Website&lt;/h1&gt;
-&lt;p&gt;A review of placing an image tag and writing a descriptive alt tag. Decorative images don’t need alt tags. They just make noise on screen readers. Wonder what SEO audits will make of this. Used src= for the image&lt;/p&gt;
-
-&lt;h1 id=&quot;link-to-external-pages-with-anchor-elements&quot;&gt;Link to External Pages with Anchor Elements&lt;/h1&gt;
-&lt;p&gt;target=”_blank” opens up a new tab in the user’s browser. Uses href= for the link.&lt;/p&gt;
-
-&lt;h1 id=&quot;link-to-internal-sections-of-a-page-with-anchor-elements&quot;&gt;Link to Internal Sections of a Page with Anchor Elements&lt;/h1&gt;
-&lt;p&gt;Create links with the id of an element i.e. #navbar to jump to &amp;lt;nav id=”navbar&amp;gt;&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="HTML" /><summary type="html">Refreshing and documenting my HTML skills I decided to sign up for FreeCodeCamp to fill out any gaps in my Front End design skills. Been using several resources around the web while building customer and internal projects. But there has never been a way for me to Shocase what I know. Plus I think it may be high time I run through everything from top to bottom. I know much of this will be a review, but I’ve seen how learning, then sharing deepens knowledge. My first day has been a great review on some things I know well.</summary></entry><entry><title type="html">Bitbucket &amp;amp; Git</title><link href="/git/2017/09/07/Bitbucket.html" rel="alternate" type="text/html" title="Bitbucket &amp;amp; Git" /><published>2017-09-07T00:00:00+02:00</published><updated>2017-09-07T00:00:00+02:00</updated><id>/git/2017/09/07/Bitbucket</id><content type="html" xml:base="/git/2017/09/07/Bitbucket.html">&lt;p&gt;Been looking at version control for some time. I’ve been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins.
-It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I’ve looked at other version control systems out there. I’ve decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.&lt;/p&gt;
-
-&lt;p&gt;Recently had a Grad Student make contact for Internship. He’s a friend of a friend which made for a nice warm introduction.
-He’s about to finish his degree but has gotten stuck in the Job readiness department. I’ve been looking at ways for us to colaborate remotely when we can’t work in person.&lt;/p&gt;
-
-&lt;p&gt;I ended up going with Asana, Bitbucket and Slack as our remote work stack. And we’ve just heading into a new project together.&lt;/p&gt;
-
-&lt;p&gt;I’ve recently enjoyed the Atomic design way of thinking. I’ve got a seperate post on this. It’s really broadened my thinking in terms of how I plan out design. Some of the smaller projects like themes for Wordpress sites of small Businesses don’t really have the budget to invest in design systems. I think as time goes on more businesses will start to think this way. But right now Small business is stuck in the design, neglect, abandon and redesign cycle. This really alienates end users who really resent having to re-learn how to use a site they love.&lt;/p&gt;
-
-&lt;p&gt;We’ve taken quite some time going over Wordpress themes and setup for Webdesign. Also moved my Development environment over to Ubuntu from Windows7 after dabbling in Windows8 then 8.1 then 10.&lt;/p&gt;
-
-&lt;p&gt;After careful consideration I actually enjoy using Bitbucket it’s got more functionality and is more intergrated with Atlassian’s Development toolset. It’s been fairly easy to onboard an Intern. All it took was writing some walkthroughs and links to relevant docs and we’re all set.&lt;/p&gt;
-
-&lt;p&gt;Will be relooking Github again in the future.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Git" /><summary type="html">Been looking at version control for some time. I’ve been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins. It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I’ve looked at other version control systems out there. I’ve decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.</summary></entry></feed>
+&lt;p&gt;Divide One Decimal by Another with JavaScript		Aug 1, 2019
+Multiply Two Decimals with JavaScript		Aug 1, 2019
+Create Decimal Numbers with JavaScript		Aug 1, 2019
+Decrement a Number with JavaScript		Aug 1, 2019
+Increment a Number with JavaScript		Aug 1, 2019
+Divide One Number by Another with JavaScript		Aug 1, 2019
+Multiply Two Numbers with JavaScript		Aug 1, 2019
+Subtract One Number from Another with JavaScript		Aug 1, 2019
+Add Two Numbers with JavaScript		Aug 1, 2019&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Javascript" /><summary type="html">So while digging into React I’ve decided to ensure I have as complete an understading of JS as possible.</summary></entry><entry><title type="html">Form Accesibility</title><link href="/2019/01/22/Form-Accesibility.html" rel="alternate" type="text/html" title="Form Accesibility" /><published>2019-01-22T00:00:00+02:00</published><updated>2019-01-22T00:00:00+02:00</updated><id>/2019/01/22/Form-Accesibility</id><content type="html" xml:base="/2019/01/22/Form-Accesibility.html">&lt;p&gt;Improve Form Field Accessibility with the label Element		Mar 22, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html">Improve Form Field Accessibility with the label Element Mar 22, 2019</summary></entry></feed>
