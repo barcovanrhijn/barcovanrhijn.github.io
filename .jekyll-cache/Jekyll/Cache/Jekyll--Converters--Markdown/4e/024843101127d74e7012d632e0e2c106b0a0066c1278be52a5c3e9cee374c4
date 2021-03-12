@@ -1,0 +1,63 @@
+I"�<p>It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.</p>
+
+<h1 id="forms">Forms</h1>
+<p>-Check Radio Buttons and Checkboxes by Default
+-Create a Set of Checkboxes
+-Create a Set of Radio Buttons
+-Use HTML5 to Require a Field
+-Add a Submit Button to a Form
+-Create a Form Element
+-Add Placeholder Text to a Text Field
+-Create a Text Field
+-Create an Ordered List
+-Create a Bulleted Unordered List</p>
+
+<h1 id="turn-an-image-into-a-link">Turn an Image into a Link</h1>
+<p>Images make great links. Used to do this with buttons on web pages in the days of CSS1. But now days I like CSS Buttons.</p>
+<h1 id="make-dead-links-using-the-hash-symbol">Make Dead Links Using the Hash Symbol</h1>
+<p>Fab trick I use often to mock up links and navs before I have all the details.</p>
+<h1 id="nest-an-anchor-element-within-a-paragraph">Nest an Anchor Element within a Paragraph</h1>
+<p>Let the Nesting begin. Something I use almost daily when I build out content for a page. It’s a staple of well built sites.</p>
+
+<p>Make Circular Images with a border-radius		Jan 16, 2019
+Add Rounded Corners with border-radius		Jan 16, 2019
+Add Borders Around Your Elements		Jan 16, 2019
+Size Your Images		Jan 16, 2019
+Specify How Fonts Should Degrade		Jan 16, 2019
+Import a Google Font		Jan 16, 2019
+Set the Font Family of an Element		Jan 16, 2019
+Change the Font Size of an Element		Jan 16, 2019
+Style Multiple Elements with a CSS Class		Jan 16, 2019
+Use a CSS Class to Style an Element		Jan 16, 2019
+Use CSS Selectors to Style Elements		Jan 16, 2019
+Change the Color of Text		Jan 16, 2019
+Define the Head and Body of an HTML Document		Jan 16, 2019
+Declare the Doctype of an HTML Document		Jan 16, 2019
+Say Hello to HTML Elements</p>
+
+<p>Prioritize One Style Over Another		Jan 16, 2019
+Inherit Styles from the Body Element		Jan 16, 2019
+Style the HTML Body Element		Jan 16, 2019
+Understand Absolute versus Relative Units		Jan 16, 2019
+Use Attribute Selectors to Style Elements		Jan 16, 2019
+Use Clockwise Notation to Specify the Margin of an Element		Jan 16, 2019
+Use Clockwise Notation to Specify the Padding of an Element		Jan 16, 2019
+Add Different Margins to Each Side of an Element		Jan 16, 2019
+Add Different Padding to Each Side of an Element		Jan 16, 2019
+Add a Negative Margin to an Element		Jan 16, 2019
+Adjust the Margin of an Element		Jan 16, 2019
+Adjust the Padding of an Element		Jan 16, 2019
+Use an id Attribute to Style an Element		Jan 16, 2019
+Set the id of an Element		Jan 16, 2019
+Give a Background Color to a div Element
+Use RGB to Mix Colors		Jan 16, 2019
+Use RGB values to Color Elements		Jan 16, 2019
+Use Abbreviated Hex Code		Jan 16, 2019
+Use Hex Code to Mix Colors		Jan 16, 2019
+Use Hex Code for Specific Colors		Jan 16, 2019
+Override All Other Styles by using Important		Jan 16, 2019
+Override Class Declarations with Inline Styles		Jan 16, 2019
+Override Class Declarations by Styling ID Attributes		Jan 16, 2019
+Override Styles in Subsequent CSS</p>
+
+:ET

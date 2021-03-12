@@ -1,2 +1,4 @@
 collections:
   category:
+  plugins:
+- jekyll-menus

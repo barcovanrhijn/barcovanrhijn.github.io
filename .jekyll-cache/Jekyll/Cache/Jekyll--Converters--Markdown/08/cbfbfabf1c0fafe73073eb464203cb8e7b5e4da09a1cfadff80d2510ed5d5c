@@ -1,0 +1,35 @@
+I"`<h1 id="about-page">About page</h1>
+<p>Hi My name is Barco van Rhijn.</p>
+
+<p><img src="assets/images/profile2.jpg" alt="alt profile" /></p>
+
+<p>I’m a Developer that’s able to speak geek and human fluently. My Consultative approach is rated highly with customers I do work for.</p>
+
+<p>If your looking for a Developer I’m available for hire. You can reach out to me on barcovanrhijn@gmail.com</p>
+
+<p>You can view some of my private projects on my Github page https://github.com/barcovanrhijn.</p>
+
+<h2 id="skills">Skills</h2>
+<p>My strongest skills are in PHP and JS (I particularly enjoy VueJS). I’m pushing into becoming a FullStack JS developer.</p>
+
+<p>Much of time spent expanding skills is invested in expanding my JS skillset.</p>
+
+<h3 id="ive-worked-with">I’ve worked with</h3>
+<ul>
+  <li>PHP (Vanilla)</li>
+  <li>Laravel</li>
+  <li>Mysql/MariaDb</li>
+  <li>Python3</li>
+  <li>Bash</li>
+  <li>JS</li>
+  <li>VueJs</li>
+  <li>ReactJs</li>
+  <li>Ruby on Rails</li>
+  <li>CSS3</li>
+  <li>SASS</li>
+  <li>Bootstrap</li>
+  <li>Ionic (Android &amp; PWA is my current focus)</li>
+  <li>TypeScript</li>
+</ul>
+
+:ET
