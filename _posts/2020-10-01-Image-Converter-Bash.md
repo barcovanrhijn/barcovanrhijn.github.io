@@ -5,8 +5,6 @@ author: Barco van Rhijn
 category: Bash
 ---
 
-## Helping marketing teams get images right the first time.
-
 I've been involved in an e-Commerce startup on and off for a few months and one recurring theme has been image optimization issues. 
 
 Continually compressing images on the web-server is really slow. Doing it by hand is annoying.
@@ -14,6 +12,8 @@ Continually compressing images on the web-server is really slow. Doing it by han
 And while we've seen and used some of the lovely API's that have been built. One blazingly obvious solution has been to enable Marketers making images to upload optimized images.
 
 This solves issues with using images on multiple platforms. And not just the e-Commerce shopfront.
+
+## Helping a Marketing team solve image compression
 
 So I set out to build a simple tool. Started out in Python until I kept hitting slow conversion times due to the way the libraries run single threaded. 
 
