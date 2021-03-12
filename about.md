@@ -24,6 +24,8 @@ My strongest skills are
 - Project management
 - Communication
 
+![alt text](assets/images/coding-stats-021-02.png "Coding Spread - Jan 2021")
+
 Much of time spent expanding skills is invested in expanding my JS skillset. 
 
 ## I've used 
@@ -42,8 +44,7 @@ Much of time spent expanding skills is invested in expanding my JS skillset.
 - Ionic (Android & PWA is my current focus)
 - TypeScript 
 
-
-
-
+# Values
+![alt Work Values](assets/images/work-values.png)
 
 
