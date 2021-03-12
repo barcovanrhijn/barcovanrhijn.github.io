@@ -26,7 +26,7 @@ My strongest skills are
 
 ![alt text](assets/images/coding-stats-021-02.png "Coding Spread - Jan 2021")
 
-Much of time spent expanding skills is invested in expanding my JS skillset. 
+Much of time spent expanding skills is invested in expanding my JS skillset. This particular snapshot from February 2021 also includes some time spent coding out Email templates.
 
 ## I've used 
 - PHP (Vanilla)
