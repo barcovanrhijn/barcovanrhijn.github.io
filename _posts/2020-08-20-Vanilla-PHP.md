@@ -46,21 +46,16 @@ I've just touched on the basics of doing this in Javascript after what I'd learn
 
 In the past I'd mostly customized PHP code or written small Wordpress plugins which did not have enough code to make Unit tests a viable option. 
 
-When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this. 
+When I asked the developer I worked with it turned out that he had not used PHPUnit before,so I was on my own with this. 
 
 ## Lessons learned
 
-The project contributed valuable experience but the partnership was not well matched. 
-
-When comparing notes I was producing 6 Months of output in 3 Weeks compared to the other dev's output. 
-
-I was putting out more hours and my workflow was more productive. 
-
-The structure of our agreement was a percentage based project partnership which does not support varying degrees of input very well.
-
-I was teaching Git and local PHP setup techniques since he was still pushing changes through to a FTP live server to view changes to the code base making colaboration painfully slow. 
-
-I do this gladly but was let down by the nature of our agreement.
+- The project contributed valuable experience but the partnership was not well-matched.
+- When comparing notes I was producing 6 Months of output in 3 Weeks compared to the other dev's output. 
+- I was putting out more hours and my workflow was more productive. 
+- The structure of our agreement was a percentage based project partnership which does not support varying degrees of input very well.
+- I was teaching Git and local PHP setup techniques since he was still pushing changes through shared hosting web interface to view changes to the code base making collaboration painfully slow. 
+- Cooperation could have worked but the nature of the partnership agreement did not account how much each person puts in. 
 
 For future projects I'd favor an hourly fee or fixed monthly fee.
 

@@ -4,12 +4,10 @@ layout: post
 author: Barco van Rhijn
 category: Git
 ---
-
 Been looking at version control for some time. I’ve been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins. 
 
-It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I’ve looked at other version control systems out there. 
-
-I’ve decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.
+It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I’ve looked at other version control systems out there like SVN I decided that Git is a clear winner in terms of enabling team work. 
+Team work was the bit that really got me interested in Git in the end.
 
 ## the Intern
 
