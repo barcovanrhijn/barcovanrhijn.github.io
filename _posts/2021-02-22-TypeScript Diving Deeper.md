@@ -4,9 +4,6 @@ layout: post
 author: Barco van Rhijn
 category: TypeScript
 ---
-
-## Ionic meets VueJs
-
 I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I've got a new project lined up I decided to dig in and see what they've got. 
 
 I've always liked the concise syntax to VueJs over ReactJs so I decided to give the two a go together.

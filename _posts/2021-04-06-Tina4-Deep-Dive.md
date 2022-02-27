@@ -2,7 +2,7 @@
 title: Tina4 we meet again
 layout: post
 author: Barco van Rhijn
-category: PHP
+category: Tina4
 ---
 
 A number of years have passed since I first saw the [Tina4](https://tina4.com/documentation) stack. Tina4 officially strives not to be a framework. So rather call a collection of best practices for PHP but soon other languages as well. 

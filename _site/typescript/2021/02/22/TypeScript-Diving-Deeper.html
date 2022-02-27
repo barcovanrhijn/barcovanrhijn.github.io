@@ -1,60 +1,124 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Delving into TypeScript - first impressions</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="/assets/css/styles1.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="container">
-    <img class="header" src="/assets/images/header.png" alt="site-header">
-    <nav>
-  
-  <a href="/" >
-    Home
-  </a> 
-  
-  <a href="/blog.html" >
-    Blog
-  </a> 
-  
-  <a href="/about.html" >
-    About
-  </a> 
-  
-  </nav>
-    <br/>
-    <main class="container">
-    <h1>Delving into TypeScript - first impressions</h1>
-<p>22 Feb 2021 - Barco van Rhijn</p>
+  <body class="container has-background-white-bis">
+    <section class="mt-3">
+<img class="header" src="/assets/images/header.png" alt="site-header">
+</section>
+    <div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
 
-<p>I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</p>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarTop">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
 
-<p>So with VueJS and Ionic came a recommendation to keep Typescript. And my journey began Mid Jan 2021 with types. It’s not been all love at first bite but after delving into a 60min carsh course I’ve been able to survive the first few days. The promised gains seem worth the pain.</p>
+  <div id="navBarTop" class="navbar-menu has-background-primary">
+    <div class="navbar-start">
 
-<p>My first few days have come with intense pain though. After coding for a few days I kept running into Type errors that I did not quite know how to solve. Initially it seemed that TS is the roadblock to getting any code to work. I’d write out perfect JS and it would fall on it’s face every time. Test it outside of TS and it works flawlessly.</p>
+      
+      <a class="navbar-item" href="/" >
+        Home
+      </a>
+      
+      <a class="navbar-item" href="/blog.html" >
+        Blog
+      </a>
+      
+      <a class="navbar-item" href="/now.html" >
+        Now
+      </a>
+      
+    </div>
+
+  </div>
+</nav>
+</div>
+    <main class="content is-normal m-5">
+    <section class="section content is-normal">
+    <div class="columns">
+        <div class="column is-8"><h1 class="is-size-3 is-capitalized">Delving into TypeScript - first impressions</h1>
+        <span class="has-text-primary ">22 Feb 2021 </span>
+        </div>
+        <div class="column is-2">
+            <span class="has-text-danger is-capitalized is-pulled-right"><b>Category</b> TypeScript</span>
+        </div>
+    </div>
+
+
+<p><p>I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</p>
+
+<p>I’ve always liked the concise syntax to VueJs over ReactJs so I decided to give the two a go together.</p>
+
+<p>Some early previews of the app working with working API intergration.
+<img src="assets/images/picking-screen.png" alt="alt Work Picking Screen" />
+<img src="assets/images/screenshot_2021-01-18-app.png" alt="alt Work Overview" /></p>
+
+<h2 id="ionic-vue-comes-with-ts">Ionic Vue comes with TS</h2>
+<p>So with VueJS and Ionic came a recommendation to keep Typescript. And so my journey began Mid Jan 2021 with types.</p>
+
+<p>It’s not been all love at first bite but after delving into a 60min crash course I’ve been able to survive the first few days. The promised gains seem worth the pain.</p>
+
+<p>My first few days have come with intense pain though. After coding for a few days I kept running into Type errors that I did not quite know how to solve.</p>
+
+<p>Initially it seemed that TS is the roadblock to getting any code to work. I’d write out perfect JS and it would fall on it’s face every time. Test it outside of TS and it works flawlessly.</p>
 
 <p>And after spending a few days chasing Type errors I decided to dig deeper as there has to be something I missed initially.</p>
 
-<p>##A few lessons learned</p>
+<h2 id="a-few-lessons-learned">A few lessons learned</h2>
 
-<p>###Runtime errors with TS and Ionic sometimes show skewed line numbers. 
-This seems to be a current bug relating to SFC in VueJS. My Termporary work around has been to code with hot reload and fix errors immediately before proceeding. It’s a better way of coding that leads to better productivity any way.</p>
+<h3 id="run-time-errors-with-ts-and-ionic-sometimes-show-skewed-line-numbers">Run-time errors with TS and Ionic sometimes show skewed line numbers.</h3>
+<p>This seems to be a current bug relating to SFC in VueJS. My Temporary work around has been to code with hot reload and fix errors immediately before proceeding. It’s a better way of coding that leads to better productivity any way.</p>
 
-<p>###Git is your friend
-When line numbers go fuzzy and minutes go by. It’s often easier to revert a small change and start it again. Since we’ve got git might as well put it to good use.</p>
+<h3 id="git-is-your-friend">Git is your friend</h3>
+<p>When line numbers go fuzzy and minutes go by. It’s often easier to revert a small change and start it again. Since we’ve got git might as well put it to good use.</p>
 
-<p>###Types are easy
-The fundimentals of Types are not hard. But you need to give you brain some time to absorb the implications in code.</p>
+<h3 id="types-are-easy">Types are easy</h3>
+<p>The fundamentals of Types are not hard. But you need to give you brain some time to absorb the implications in code.</p>
 
-<p>Most of TS is really just JS and you can actually partially impliment TS in a project.</p>
+<p>Most of TS is really just JS and you can actually partially implement TS in a project.</p>
 
-<p>Essentially Types are a way of documenting expected data types and values for all variables, arrays and objects. There’s much debate around this but the simplest way is that you should only use Interfaces for Objects. For all the rest use type definitions.</p>
+<p>Essentially Types are a way of documenting expected data types and values for</p>
+<ul>
+  <li>variables</li>
+  <li>arrays</li>
+  <li>objects.</li>
+</ul>
 
+<p>There’s much debate around this but the simplest way is that you should only use Interfaces for Objects. For all the rest use type definitions.</p>
+
+<h3 id="bypass-types-in-a-pinch">Bypass Types in a pinch</h3>
 <p>In a pinch you can define the type as Any. But this should be used with caution as it sort of negates the benefits of using TS in the first place.</p>
 
+<h2 id="sage-advice">Sage Advice</h2>
 <p>As a Senior Ionic Dev pointed out types are mostly inferred in Ionic and you’ll run into type issues if you’re trying to do something too radical.</p>
 
+<h2 id="wrap-it-up">Wrap it up</h2>
+<p>Looking forward to seeing how TS will improve my development experience. I already enjoy the variable hinting TS introduces in VS Code.</p>
 
+</p>
+</section>
     </main>
+
+    <footer class="footer has-background-primary">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Code Matters</strong> by <a href="https://jgthms.com">Barco van Rhijn</a>.
+            Website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
   </body>
 </html>
+

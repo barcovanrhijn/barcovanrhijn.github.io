@@ -1,11 +1,10 @@
 ---
-title: HTML and CSS reflresh
+title: HTML and CSS refresher
 layout: post
 author: Barco van Rhijn
-category: HTML
+category: FrontEnd
 ---
 
-## Refreshing and documenting my HTML & CSS3 skills
 I decided to sign up for FreeCodeCamp as a refresher for Front End design skills. Been using several resources around the web like W3Schools while building customer and internal projects. 
 But there has never been a way for me to Showcase what I know. Plus I think it may be high time I run through everything from top to bottom. 
 

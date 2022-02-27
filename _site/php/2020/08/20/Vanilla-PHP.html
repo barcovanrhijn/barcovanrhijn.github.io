@@ -1,46 +1,139 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Vanilla PHP</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="/assets/css/styles1.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="container">
-    <img class="header" src="/assets/images/header.png" alt="site-header">
-    <nav>
-  
-  <a href="/" >
-    Home
-  </a> 
-  
-  <a href="/blog.html" >
-    Blog
-  </a> 
-  
-  <a href="/about.html" >
-    About
-  </a> 
-  
-  </nav>
-    <br/>
-    <main class="container">
-    <h1>Vanilla PHP</h1>
-<p>20 Aug 2020 - Barco van Rhijn</p>
+  <body class="container has-background-white-bis">
+    <section class="mt-3">
+<img class="header" src="/assets/images/header.png" alt="site-header">
+</section>
+    <div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
 
-<p>A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</p>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarTop">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
 
-<p>We started building template engine that could be easily filled out with details to generate brand sites.</p>
+  <div id="navBarTop" class="navbar-menu has-background-primary">
+    <div class="navbar-start">
 
-<p>I asked to do the front-end generating code. I was inspired by how Atomic Design systems worked and decided to build out a template engine with some overlapping features with Twigg. Since the requirements was that there be no dependancies I could not use Twigg or Handlebars or other such systems. 
-The project consisted of two parts. A UI that was customer facing and centrally manages all the site information and links. And the Template builder which connects to the API and parses the Json into arrays and then outputs this in a template. The API defines several settings that makes the Customer facing builder allow simple UI configurations.</p>
+      
+      <a class="navbar-item" href="/" >
+        Home
+      </a>
+      
+      <a class="navbar-item" href="/blog.html" >
+        Blog
+      </a>
+      
+      <a class="navbar-item" href="/now.html" >
+        Now
+      </a>
+      
+    </div>
 
-<p>I discovered that some of what I wanted to do to make the templating more flexible is known as Meta programming. I discussed ways we could free the data model by moving to Json in Mysql or Mongodb. Because after the first few days it became apparent that each new change.</p>
+  </div>
+</nav>
+</div>
+    <main class="content is-normal m-5">
+    <section class="section content is-normal">
+    <div class="columns">
+        <div class="column is-8"><h1 class="is-size-3 is-capitalized">Vanilla PHP</h1>
+        <span class="has-text-primary ">20 Aug 2020 </span>
+        </div>
+        <div class="column is-2">
+            <span class="has-text-danger is-capitalized is-pulled-right"><b>Category</b> PHP</span>
+        </div>
+    </div>
 
-<p>In the process of doing the work I decided to learn how to build unit tests in PHP. I’ve just touched on the basics of doing this in Javascript after what I’d learned in FreeCodeCamp. But I’d not used this in PHP yet. In the past I’d mostly customized PHP code or written plugins which did not have enough code to make Unit tests a viable option. 
-When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this.</p>
 
-<p>taking on a Vanilla PHP project for a client. In 3 Weeks I coded up my first php from scratch project in Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with senior PHP developer. The 3 weeks was valuable experience but the partnership was not well matched. When comparing notes I was producing 6months of output in 3weeks compared to the other dev’s output. I had started with a blank canvas and PHP documentation and 5min worth of Sage advice.</p>
+<p><p>Another PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard.</p>
 
+<h2 id="our-goal">Our Goal</h2>
+<p>Build a [template engine]{https://github.com/barcovanrhijn/sitebuilder} and Cms that work together through an Api connection.</p>
+
+<p>The idea was building template engine that could be easily filled out with details to generate brand sites.</p>
+
+<h2 id="creating-a-design-system">Creating a Design System</h2>
+
+<p>I asked to do the front-end generating code. I was inspired by how Atomic Design systems worked and decided to build out a template engine with some overlapping features with Twigg.</p>
+
+<p>Since the requirements was that there be no dependencies I could not use Twigg or Handlebars or other such systems.</p>
+
+<p>The project consisted of three parts.</p>
+
+<ol>
+  <li>A UI that was customer facing and centrally manages all the site information and links (similar to a CMS backend).</li>
+  <li>Template builder which connects to the API and parses the Json into arrays and then outputs this in a template.</li>
+  <li>The API defines several settings that makes the Customer facing builder allow simple UI configurations and style changes.</li>
+</ol>
+
+<p>I discovered that some of what I wanted to do to make the template more flexible is known as Meta programming. I discussed ways we could free the data model by moving to JsON in MySQL or MongoDB. Because after the first few days it became apparent that each new change in the data model introduced heaps of new work on both ends.</p>
+
+<p>Moving the data model into JSON would actually allow dynamic assignment of some properties like classes. And would make implementing new classes and design features fairly easy. Allowing us to focus on getting to optimal designs for the front-end and back in a quicker time-frame.</p>
+
+<p>It became clear that we needed a single language between the two code bases. I was starting to see a lot of variable assignment where I would reference a property on the API and rename it entirely.</p>
+
+<p>So I came up with some naming conventions for different UI parts along with their properties. After we agreed on naming that made sense to both of us I documented this on a Wiki I’d started for our project. This in turn helped standardise the language in code and made it flow like good poetry.</p>
+
+<p>I’ve always loved the simplicity of DokuWiki for such use cases.</p>
+
+<p>I also started to get the sense that some of the design should be driven from the front end as it would allow more page flexibility for the template.</p>
+
+<p>To fully enable this would require a more unlimited data model especially when it comes to how many rows and columns are involved in the final design.</p>
+
+<h2 id="meeting-php-unit">Meeting PHP Unit</h2>
+<p>In the process of doing the work I decided to learn how to build unit tests in PHP.</p>
+
+<p>I’ve just touched on the basics of doing this in Javascript after what I’d learned in FreeCodeCamp. But I’d not used this in PHP yet.</p>
+
+<p>In the past I’d mostly customized PHP code or written small Wordpress plugins which did not have enough code to make Unit tests a viable option.</p>
+
+<p>When I asked the developer I worked with it turned out that he had not used PHPUnit before,so I was on my own with this.</p>
+
+<h2 id="lessons-learned">Lessons learned</h2>
+
+<ul>
+  <li>The project contributed valuable experience but the partnership was not well-matched.</li>
+  <li>When comparing notes I was producing 6 Months of output in 3 Weeks compared to the other dev’s output.</li>
+  <li>I was putting out more hours and my workflow was more productive.</li>
+  <li>The structure of our agreement was a percentage based project partnership which does not support varying degrees of input very well.</li>
+  <li>I was teaching Git and local PHP setup techniques since he was still pushing changes through shared hosting web interface to view changes to the code base making collaboration painfully slow.</li>
+  <li>Cooperation could have worked but the nature of the partnership agreement did not account how much each person puts in.</li>
+</ul>
+
+<p>For future projects I’d favor an hourly fee or fixed monthly fee.</p>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>In 3 Weeks I coded up my Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with this PHP developer.</p>
+
+<p>I had started with a blank canvas and PHP documentation and 5min worth of Sage advice on how we’d structure the app.</p>
+
+<p>All in all the project could be refined a lot, but I’m <a href="https://github.com/barcovanrhijn/sitebuilder">pretty pleased with the outcome</a> given how short the development time-frame was.</p>
+
+</p>
+</section>
     </main>
+
+    <footer class="footer has-background-primary">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Code Matters</strong> by <a href="https://jgthms.com">Barco van Rhijn</a>.
+            Website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
   </body>
 </html>
+

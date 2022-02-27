@@ -1,213 +1,172 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Blog</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="/assets/css/styles1.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="container">
-    <img class="header" src="/assets/images/header.png" alt="site-header">
-    <nav>
-  
-  <a href="/" >
-    Home
-  </a> 
-  
-  <a href="/blog.html" class="current">
-    Blog
-  </a> 
-  
-  <a href="/about.html" >
-    About
-  </a> 
-  
-  </nav>
-    <br/>
-    <main class="container">
+  <body class="container has-background-white-bis">
+    <section class="mt-3">
+<img class="header" src="/assets/images/header.png" alt="site-header">
+</section>
+    <div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarTop">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+  <div id="navBarTop" class="navbar-menu has-background-primary">
+    <div class="navbar-start">
+
+      
+      <a class="navbar-item" href="/" >
+        Home
+      </a>
+      
+      <a class="navbar-item" href="/blog.html" class="current">
+        Blog
+      </a>
+      
+      <a class="navbar-item" href="/now.html" >
+        Now
+      </a>
+      
+    </div>
+
+  </div>
+</nav>
+</div>
+    <main class="content is-normal m-5">
     <h1>Latest Posts</h1>
 
-<ul>
-  
-    <li>
-      <h2><a href="/typescript/2021/02/22/TypeScript-Diving-Deeper.html">Delving into TypeScript - first impressions</a></h2>
-      <p>I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</p>
+    <div class="columns">
+    
+        <div class="column is-one-third">
+            <h2><a href="/git/2021/10/28/git-amnesia.html">How to solve Github Amnesia</a></h2>
+            <p>If you work with any technology long enough you get to see some quirks. 
+In the recent couple of months I’ve started seeing something that I can only term Github Amnesia.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/jekyll/2021/01/15/Blog-Rebooting.html">Booting up my personal Blog</a></h2>
-      <p>I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.</p>
+        </div>
+    
+        <div class="column is-one-third">
+            <h2><a href="/twig/2021/07/23/compare-in-twig.html">How to compare strings in twig</a></h2>
+            <p>Twig supports several operators that are similar to the ones in PHP. But often there are simplified versions like</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/workflow/2021/01/02/Tracking-code-Wakatime.html">Developer Analytics in Wakatime</a></h2>
-      <p>I’ve been looking at ways to track overall time spent coding and dig deeper into where I spend time.</p>
+        </div>
+    
+        <div class="column is-one-third">
+            <h2><a href="/tina4/2021/07/03/tina4-orm-filters.html">Using Filters in Tina4 ORM</a></h2>
+            <p>A normal ORM call in Tina4PHP includes a where function which is similar to what you may see in Laravel. However, the syntax more closely matches SQL. But once you have a lot of where conditions this becomes quite a long unwieldy line.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/workflow/2021/01/01/Social-Sharing.html">Developer Analytics in Wakatime</a></h2>
-      
+        </div>
+    
+    </div>
+    <div class="columns">
+    
+        <div class="column is-one-third">
+            <h2><a href="/workflow/2021/07/03/offline-documentation.html">Importance of Offline Documentation</a></h2>
+            <p>So I know we can Google documentation for just about anything. But I often find I use way more clicks than I need to find the exact version of documentation I’m looking for.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/ruby/2020/12/18/hello-Ruby.html">Hello Ruby</a></h2>
-      <p>I’ve been hearing about Ruby for some years. But I’ve been sceptical about the amount of moving parts (Magic) that are introduced by Ruby in the process of development. So this year I decided to test it out for myself in the holidays.</p>
+        </div>
+    
+        <div class="column is-one-third">
+            <h2><a href="/frontend/2021/05/30/How-much-JS-is-enough.html">How much JS is enough?</a></h2>
+            <p>There’s been a growing trend towards Front-end JS frameworks in the past years. I think these frameworks have their uses. 
+But I don’t think Frameworks like React, Vue and Angular always make sense for every project. For me it all comes down to simplicity and getting work out the door close to budget.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/php/2020/08/20/Vanilla-PHP.html">Vanilla PHP</a></h2>
-      <p>A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</p>
+        </div>
+    
+        <div class="column is-one-third">
+            <h2><a href="/tina4/2021/04/06/Tina4-Deep-Dive.html">Tina4 we meet again</a></h2>
+            <p>A number of years have passed since I first saw the <a href="https://tina4.com/documentation">Tina4</a> stack. Tina4 officially strives not to be a framework. So rather call a collection of best practices for PHP but soon other languages as well.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2020/01/19/HTML-Part-5.html">Html Part 5</a></h2>
-      <p>Make Screen Reader Navigation Easier with the header Landmark		Jan 19, 2019
-Wrap Content in the article Element		Jan 19, 2019
-Improve Chart Accessibility with the figure Element		Jan 19, 2019
-Improve Accessibility of Audio Content with the audio Element		Jan 19, 2019
-Make Screen Reader Navigation Easier with the footer Landmark		Jan 19, 2019
-Make Screen Reader Navigation Easier with the nav Landmark		Jan 19, 2019</p>
+        </div>
+    
+    </div>
+    <div class="columns">
+        
+        <div class="column is-one-third">
+            <h2><a href="/email/2021/03/05/Email-Templates.html">Email Template design</a></h2>
+            <p>Email template design has always been a particularly tricky spot when it comes to mail client support.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2019/08/13/JS-2.html">Js 2</a></h2>
-      
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/seo/2021/03/04/seo-mobile-first-world.html">SEO in a mobile first world</a></h2>
+            <p>It’s official! Mobile Performance affects rankings. Since Jan 2020 Google now considers the mobile view of your page as a large factor to your SEO score.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/javascript/2019/08/01/JS.html">Javascript</a></h2>
-      <p>So while digging into React I’ve decided to ensure I have as complete an understading of JS as possible.</p>
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/typescript/2021/02/22/TypeScript-Diving-Deeper.html">Delving into TypeScript - first impressions</a></h2>
+            <p>I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2019/01/22/ReactJS-first-steps.html">Reactjs First Steps</a></h2>
-      <p>Compose React Components		Mar 22, 2019
-Use React to Render Nested Components		Mar 22, 2019
-Create a Component with Composition		Mar 22, 2019
-Create a React Component		Mar 22, 2019
-Create a Stateless Functional Component		Mar 22, 2019
-Learn About Self-Closing JSX Tags		Mar 22, 2019
-Define an HTML Class in JSX		Mar 22, 2019
-Render HTML Elements to the DOM		Mar 22, 2019
-Add Comments in JSX		Mar 22, 2019
-Create a Complex JSX Element		Mar 22, 2019
-Create a Simple JSX Element		Mar 22, 2019
-Write a React Component from Scratch		Mar 22, 2019
-Render a Class Component to the DOM</p>
+        </div>
+        
+    </div>
+    <div class="columns">
+        
+        <div class="column is-one-third">
+            <h2><a href="/jekyll/2021/01/15/Booting-up-my-blog.html">Booting up my personal Blog</a></h2>
+            <p>I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2019/01/22/Form-Accesibility.html">Form Accesibility</a></h2>
-      <p>Improve Form Field Accessibility with the label Element		Mar 22, 2019</p>
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/ruby/2020/12/18/hello-Ruby.html">Hello Ruby</a></h2>
+            <p>I’ve been hearing about Ruby on Rails for some years. But I’ve been skeptical about the amount of moving parts (Magic) that are introduced by Ruby and Rails in the process of development. So this year I decided to test it out for myself in the holidays.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2019/01/18/HTML-Part4.html">Html Part4</a></h2>
-      <p>Adjust the Color of Various Elements to Complementary Colors		Jan 18, 2019
-Learn about Tertiary Colors		Jan 18, 2019
-Create Movement Using CSS Animation		Jan 18, 2019
-Modify Fill Mode of an Animation		Jan 18, 2019
-Use CSS Animation to Change the Hover State of a Button		Jan 18, 2019
-Learn How the CSS @keyframes and animation Properties Work		Jan 18, 2019
-Create a More Complex Shape Using CSS and HTML		Jan 18, 2019
-Create a Graphic Using CSS		Jan 18, 2019
-Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis		Jan 18, 2019
-Use the CSS Transform Property skewX to Skew an Element Along the X-Axis		Jan 18, 2019
-Use the CSS Transform scale Property to Scale an Element on Hover		Jan 18, 2019
-Use the CSS Transform scale Property to Change the Size of an Element		Jan 18, 2019
-Create Texture by Adding a Subtle Pattern as a Background Image		Jan 18, 2019
-Use a CSS Linear Gradient to Create a Striped Element		Jan 18, 2019
-Create a Gradual CSS Linear Gradient		Jan 18, 2019
-Adjust the Tone of a Color		Jan 18, 2019
-Adjust the Hue of a Color		Jan 18, 2019
-Jump Straight to the Content Using the main Element		Jan 18, 2019
-Use Headings to Show Hierarchical Relationships of Content		Jan 18, 2019
-Know When Alt Text Should be Left Blank		Jan 18, 2019
-Add a Text Alternative to Images for Visually Impaired Accessibility		Jan 18, 2019
-Make Motion More Natural Using a Bezier Curve		Jan 18, 2019
-Use a Bezier Curve to Move a Graphic		Jan 18, 2019
-Learn How Bezier Curves Work		Jan 18, 2019
-Change Animation Timing with Keywords		Jan 18, 2019
-Animate Multiple Elements at Variable Rates		Jan 18, 2019
-Animate Elements at Variable Rates		Jan 18, 2019
-Make a CSS Heartbeat using an Infinite Animation Count		Jan 18, 2019
-Animate Elements Continually Using an Infinite Animation Count		Jan 18, 2019
-Create Visual Direction by Fading an Element from Left to Right		Jan 18, 2019</p>
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/bash/2020/10/01/Image-Converter-Bash.html">Image Converter</a></h2>
+            <p>I’ve been involved in an e-Commerce startup on and off for a few months and one recurring theme has been image optimization issues.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/2019/01/17/HTML-Part3.html">Html Part3</a></h2>
-      <p>Inherit CSS Variables		Jan 17, 2019
-Improve Compatibility with Browser Fallbacks		Jan 17, 2019
-Attach a Fallback value to a CSS Variable		Jan 17, 2019
-Use a custom CSS Variable		Jan 17, 2019
-Create a custom CSS Variable		Jan 17, 2019
-Use CSS Variables to change several elements at once
-Use the text-transform Property to Make Text Uppercase		Jan 17, 2019
-Decrease the Opacity of an Element		Jan 17, 2019
-Add a box-shadow to a Card-like Element		Jan 17, 2019
-Adjust the Size of a Header Versus a Paragraph Tag		Jan 17, 2019
-Adjust the background-color Property of Text		Jan 17, 2019
-Create a Horizontal Line Using the hr Element		Jan 17, 2019
-Use the s Tag to Strikethrough Text		Jan 17, 2019
-Use the em Tag to Italicize Text		Jan 17, 2019
-Use the u Tag to Underline Text		Jan 17, 2019
-Use the strong Tag to Make Text Bold		Jan 17, 2019
-Adjust the Height of an Element Using the height Property		Jan 17, 2019
-Adjust the Width of an Element Using the width Property		Jan 17, 2019
-Create Visual Balance Using the text-align Property		Jan 17, 2019
-Use a media query to change a variable		Jan 17, 2019
-Change a variable for a specific area		Jan 17, 2019
-Adjust the Color of Various Elements to Complementary Colors		Jan 18, 2019
-Learn about Tertiary Colors		Jan 18, 2019
-Learn about Complementary Colors		Jan 17, 2019
-Center an Element Horizontally Using the margin Property		Jan 17, 2019
-Change the Position of Overlapping Elements with the z-index Property		Jan 17, 2019
-Push Elements Left or Right with the float Property		Jan 17, 2019
-Lock an Element to the Browser Window with Fixed Positioning		Jan 17, 2019
-Lock an Element to its Parent with Absolute Positioning		Jan 17, 2019
-Move a Relatively Positioned Element with CSS Offsets		Jan 17, 2019
-Change an Element’s Relative Position		Jan 17, 2019
-Adjust the Hover State of an Anchor Tag		Jan 17, 2019
-Set the line-height of Paragraphs		Jan 17, 2019
-Set the font-size of Paragraph Text		Jan 17, 2019
-Set the font-weight for Multiple Heading Elements		Jan 17, 2019
-Set the font-size for Multiple Heading Elements		Jan 17, 2019</p>
+        </div>
+        
+    </div>
+    <div class="columns">
+        
+        <div class="column is-one-third">
+            <h2><a href="/php/2020/08/20/Vanilla-PHP.html">Vanilla PHP</a></h2>
+            <p>Another PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/html/2019/01/16/HTML-Part-2.html">HTML Part 2</a></h2>
-      <p>It’s day two of my HTML challenge. I’m feeling great. I’m completing this challenge during the evenings after work.</p>
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/python/2020/08/10/Image-manipulation-with-python.html">Image Manipulation with Python</a></h2>
+            <p>So an e-Ccommerce project I’m working with has hit a new requirement to create bulk vouchers images for clients that can be sent out using social media.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/html/2019/01/15/HTML-Part-1.html">HTML Part 1</a></h2>
-      <h2 id="refreshing-and-documenting-my-html-skills">Refreshing and documenting my HTML skills</h2>
-<p>I decided to sign up for FreeCodeCamp to fill out any gaps in my Front End design skills. Been using several resources around the web while building customer and internal projects. But there has never been a way for me to Shocase what I know. Plus I think it may be high time I run through everything from top to bottom. I know much of this will be a review, but I’ve seen how learning, then sharing deepens knowledge. My first day has been a great review on some things I know well.</p>
+        </div>
+        
+        <div class="column is-one-third">
+            <h2><a href="/python/2019/08/12/Scraping-data-with-python.html">Scraping Data with Python</a></h2>
+            <p>So I reached a point where I needed to get data from a 3rd party portal to send on to customers.</p>
 
-    </li>
-  
-    <li>
-      <h2><a href="/git/2017/09/07/Bitbucket.html">Bitbucket & Git</a></h2>
-      <p>Been looking at version control for some time. I’ve been doing small code and CSS fixes to sites for a few months. Built out simple Wordpress plugins.
-It has generally felt like learning to push such code to a Git repo would take more effort than reward. But after I’ve looked at other version control systems out there. I’ve decided that Git is a clear winner in terms of enabling team work. Team work was the bit that really got me interested in Git in the end.</p>
+        </div>
+        
+    </div>
 
-    </li>
-  
-</ul>
+
     </main>
+
+    <footer class="footer has-background-primary">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Code Matters</strong> by <a href="https://jgthms.com">Barco van Rhijn</a>.
+            Website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
   </body>
 </html>
+

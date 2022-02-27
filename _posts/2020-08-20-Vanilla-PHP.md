@@ -4,7 +4,7 @@ layout: post
 author: Barco van Rhijn
 category: PHP
 ---
-A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard. 
+Another PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his Php standard. 
 
 ## Our Goal
 Build a [template engine]{https://github.com/barcovanrhijn/sitebuilder} and Cms that work together through an Api connection.
@@ -19,10 +19,8 @@ Since the requirements was that there be no dependencies I could not use Twigg o
 
 The project consisted of three parts. 
 
-1. A UI that was customer facing and centrally manages all the site information and links (similar to a CMS backend). 
-
-2. Template builder which connects to the API and parses the Json into arrays and then outputs this in a template. 
-
+1. A UI that was customer facing and centrally manages all the site information and links (similar to a CMS backend).
+2. Template builder which connects to the API and parses the Json into arrays and then outputs this in a template.
 3. The API defines several settings that makes the Customer facing builder allow simple UI configurations and style changes.
 
 I discovered that some of what I wanted to do to make the template more flexible is known as Meta programming. I discussed ways we could free the data model by moving to JsON in MySQL or MongoDB. Because after the first few days it became apparent that each new change in the data model introduced heaps of new work on both ends.
@@ -61,10 +59,10 @@ For future projects I'd favor an hourly fee or fixed monthly fee.
 
 ## Wrap up
 
-In 3 Weeks I coded up my Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with Senior PHP developer. 
+In 3 Weeks I coded up my Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with this PHP developer. 
 
 I had started with a blank canvas and PHP documentation and 5min worth of Sage advice on how we'd structure the app.
 
-All in all the project could be refined a lot but I'm [pretty pleased with the outcome](https://github.com/barcovanrhijn/sitebuilder) given how short the development time-frame was. 
+All in all the project could be refined a lot, but I'm [pretty pleased with the outcome](https://github.com/barcovanrhijn/sitebuilder) given how short the development time-frame was. 
 
   

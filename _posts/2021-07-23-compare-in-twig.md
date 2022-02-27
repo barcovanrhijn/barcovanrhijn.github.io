@@ -2,7 +2,7 @@
 title: How to compare strings in twig
 layout: post
 author: Barco van Rhijn
-category: twig
+category: Twig
 ---
 Twig supports several operators that are similar to the ones in PHP. But often there are simplified versions like
 

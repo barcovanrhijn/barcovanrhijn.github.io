@@ -1,232 +1,357 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-25T10:51:36+02:00</updated><id>/feed.xml</id><entry><title type="html">Delving into TypeScript - first impressions</title><link href="/typescript/2021/02/22/TypeScript-Diving-Deeper.html" rel="alternate" type="text/html" title="Delving into TypeScript - first impressions" /><published>2021-02-22T00:00:00+02:00</published><updated>2021-02-22T00:00:00+02:00</updated><id>/typescript/2021/02/22/TypeScript%20Diving%20Deeper</id><content type="html" xml:base="/typescript/2021/02/22/TypeScript-Diving-Deeper.html">&lt;p&gt;I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-27T10:58:53+02:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">How to solve Github Amnesia</title><link href="http://localhost:4000/git/2021/10/28/git-amnesia.html" rel="alternate" type="text/html" title="How to solve Github Amnesia" /><published>2021-10-28T00:00:00+02:00</published><updated>2021-10-28T00:00:00+02:00</updated><id>http://localhost:4000/git/2021/10/28/git-amnesia</id><content type="html" xml:base="http://localhost:4000/git/2021/10/28/git-amnesia.html"><![CDATA[<p>If you work with any technology long enough you get to see some quirks. 
+In the recent couple of months I’ve started seeing something that I can only term Github Amnesia.</p>
 
-&lt;p&gt;So with VueJS and Ionic came a recommendation to keep Typescript. And my journey began Mid Jan 2021 with types. It’s not been all love at first bite but after delving into a 60min carsh course I’ve been able to survive the first few days. The promised gains seem worth the pain.&lt;/p&gt;
+<p>Often when I push up code it goes MIA. In some cases I’ve seen code refuse to get marked as changed on a fresh Clone. In the end it became apparent that Origin had lost the plot.
+So today I’ll show you some strategies in dealing with this kind of thing.</p>
 
-&lt;p&gt;My first few days have come with intense pain though. After coding for a few days I kept running into Type errors that I did not quite know how to solve. Initially it seemed that TS is the roadblock to getting any code to work. I’d write out perfect JS and it would fall on it’s face every time. Test it outside of TS and it works flawlessly.&lt;/p&gt;
+<p>Most people are quite a bit confused when they first see this. Some Devs still live in denial of the fact. So when you ask around the office it’s almost assumed that the issue cannot possibly be git or Github.  And So I thought I’d write something about this in the hope that it can be useful to others who reach equally perplixing stages of git.</p>
 
-&lt;p&gt;And after spending a few days chasing Type errors I decided to dig deeper as there has to be something I missed initially.&lt;/p&gt;
+<h2 id="how-it-looks">How it looks</h2>
+<ul>
+  <li>Commit the files.</li>
+  <li>Check that everything that’s changed shows up.</li>
+  <li>Push confirm no errors are shown.</li>
+</ul>
 
-&lt;p&gt;##A few lessons learned&lt;/p&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit
+git push
+</code></pre></div></div>
+<h3 id="confirm-if-the-code-is-on-github">Confirm if the code is on Github</h3>
+<p>If it’s still missing try the next step</p>
 
-&lt;p&gt;###Runtime errors with TS and Ionic sometimes show skewed line numbers. 
-This seems to be a current bug relating to SFC in VueJS. My Termporary work around has been to code with hot reload and fix errors immediately before proceeding. It’s a better way of coding that leads to better productivity any way.&lt;/p&gt;
+<h3 id="add-the-files-again-with--f">Add the files again with -f</h3>
 
-&lt;p&gt;###Git is your friend
-When line numbers go fuzzy and minutes go by. It’s often easier to revert a small change and start it again. Since we’ve got git might as well put it to good use.&lt;/p&gt;
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nt">-f</span> path/to/file
+git push
+</code></pre></div></div>
 
-&lt;p&gt;###Types are easy
-The fundimentals of Types are not hard. But you need to give you brain some time to absorb the implications in code.&lt;/p&gt;
+<h3 id="confirm-if-the-code-is-on-github-1">Confirm if the code is on Github</h3>
+<p>Copy your code folder elsewhere temporarily</p>]]></content><author><name>Barco van Rhijn</name></author><category term="Git" /><summary type="html"><![CDATA[If you work with any technology long enough you get to see some quirks. In the recent couple of months I’ve started seeing something that I can only term Github Amnesia.]]></summary></entry><entry><title type="html">How to compare strings in twig</title><link href="http://localhost:4000/twig/2021/07/23/compare-in-twig.html" rel="alternate" type="text/html" title="How to compare strings in twig" /><published>2021-07-23T00:00:00+02:00</published><updated>2021-07-23T00:00:00+02:00</updated><id>http://localhost:4000/twig/2021/07/23/compare-in-twig</id><content type="html" xml:base="http://localhost:4000/twig/2021/07/23/compare-in-twig.html"><![CDATA[<p>Twig supports several operators that are similar to the ones in PHP. But often there are simplified versions like</p>
 
-&lt;p&gt;Most of TS is really just JS and you can actually partially impliment TS in a project.&lt;/p&gt;
+<h3 id="php">PHP</h3>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Exact match</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$x</span> <span class="o">===</span> <span class="nv">$y</span><span class="p">)</span> 
+<span class="o">?</span> <span class="k">echo</span> <span class="kc">true</span> 
+<span class="o">:</span> <span class="k">echo</span> <span class="kc">false</span>
+<span class="p">;</span>
+</code></pre></div></div>
+<h3 id="twig">Twig</h3>
+<div class="language-twig highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">{%</span> <span class="k">if</span> <span class="nv">x</span> <span class="ow">is</span> <span class="nv">same</span> <span class="k">as</span> <span class="nv">y</span> <span class="cp">%}</span>
 
-&lt;p&gt;Essentially Types are a way of documenting expected data types and values for all variables, arrays and objects. There’s much debate around this but the simplest way is that you should only use Interfaces for Objects. For all the rest use type definitions.&lt;/p&gt;
+</code></pre></div></div>]]></content><author><name>Barco van Rhijn</name></author><category term="Twig" /><summary type="html"><![CDATA[Twig supports several operators that are similar to the ones in PHP. But often there are simplified versions like]]></summary></entry><entry><title type="html">Importance of Offline Documentation</title><link href="http://localhost:4000/workflow/2021/07/03/offline-documentation.html" rel="alternate" type="text/html" title="Importance of Offline Documentation" /><published>2021-07-03T00:00:00+02:00</published><updated>2021-07-03T00:00:00+02:00</updated><id>http://localhost:4000/workflow/2021/07/03/offline-documentation</id><content type="html" xml:base="http://localhost:4000/workflow/2021/07/03/offline-documentation.html"><![CDATA[<p>So I know we can Google documentation for just about anything. But I often find I use way more clicks than I need to find the exact version of documentation I’m looking for.</p>
 
-&lt;p&gt;In a pinch you can define the type as Any. But this should be used with caution as it sort of negates the benefits of using TS in the first place.&lt;/p&gt;
+<p>Using ZealDocs is a great time-saver instead of having to look up documentation for things like HTML, Bootstrap, PHP, JS and more.</p>
 
-&lt;p&gt;As a Senior Ionic Dev pointed out types are mostly inferred in Ionic and you’ll run into type issues if you’re trying to do something too radical.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="TypeScript" /><summary type="html">I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</summary></entry><entry><title type="html">Booting up my personal Blog</title><link href="/jekyll/2021/01/15/Blog-Rebooting.html" rel="alternate" type="text/html" title="Booting up my personal Blog" /><published>2021-01-15T00:00:00+02:00</published><updated>2021-01-15T00:00:00+02:00</updated><id>/jekyll/2021/01/15/Blog-Rebooting</id><content type="html" xml:base="/jekyll/2021/01/15/Blog-Rebooting.html">&lt;p&gt;I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.&lt;/p&gt;
+<p>The added bonus is that you have documentation to continue coding if your Internet connection goes down.</p>
 
-&lt;p&gt;So Here goes….&lt;/p&gt;
+<p>Another technique has been to reference documentation from the IDE. I’ve used Jetbrains IDEs extensively for simple reference as I type.</p>
 
-&lt;h2 id=&quot;github-meet-jekyl&quot;&gt;Github, Meet Jekyl&lt;/h2&gt;
-&lt;p&gt;To get a Github pages site up you need to start a repo with your username.githubpages.com. You’ll find the the &lt;a href=&quot;https://pages.github.com/&quot;&gt; getting started with github pages &lt;/a&gt;.&lt;/p&gt;
+<p>But every, so often I’m looking for full reference and zeal is just perfect for that.</p>
 
-&lt;h2 id=&quot;can-you-say-jekyll&quot;&gt;Can you say Jekyll?&lt;/h2&gt;
-&lt;p&gt;This site is based of Jekyl which is a Jamstack site framework built with Ruby on Rails. It’s Github’s reccomended default although you can use things like Hugo or others. I like the simplicity of Jekyll which allows for maximum design expression with little fuss.&lt;/p&gt;
+<p>Download <a href="https://zealdocs.org/">ZealDocs here</a></p>]]></content><author><name>Barco van Rhijn</name></author><category term="Workflow" /><summary type="html"><![CDATA[So I know we can Google documentation for just about anything. But I often find I use way more clicks than I need to find the exact version of documentation I’m looking for.]]></summary></entry><entry><title type="html">Using Filters in Tina4 ORM</title><link href="http://localhost:4000/tina4/2021/07/03/tina4-orm-filters.html" rel="alternate" type="text/html" title="Using Filters in Tina4 ORM" /><published>2021-07-03T00:00:00+02:00</published><updated>2021-07-03T00:00:00+02:00</updated><id>http://localhost:4000/tina4/2021/07/03/tina4-orm-filters</id><content type="html" xml:base="http://localhost:4000/tina4/2021/07/03/tina4-orm-filters.html"><![CDATA[<p>A normal ORM call in Tina4PHP includes a where function which is similar to what you may see in Laravel. However, the syntax more closely matches SQL. But once you have a lot of where conditions this becomes quite a long unwieldy line.</p>
 
-&lt;p&gt;Jekyl speaks HTML, Markdown, JSON and more. It’s a fantastic way to get technical content up if you don’t need a backend.&lt;/p&gt;
+<p>To solve this and make the conditions a bit more flexible you can use a filter variable and extending it a little.</p>
 
-&lt;h2 id=&quot;where-do-i-put-images-in-jekyll&quot;&gt;Where do I put images in Jekyll&lt;/h2&gt;
-&lt;p&gt;Under the main Assets folder. The _site folder is generated on build in Jekyll.&lt;/p&gt;
+<p>So now I can send in the slug and category into my function and create the conditions dynamically. This would be even more useful in this example once you want to send in an array of slugs or categories and create the where condition in your SQL</p>
 
-&lt;h2 id=&quot;adding-classes-in-jekyll-markdown&quot;&gt;Adding classes in Jekyll Markdown&lt;/h2&gt;
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">getPosts</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$slug</span><span class="p">,</span> <span class="nx">string</span> <span class="nv">$categories</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$posts</span> <span class="o">=</span> <span class="k">new</span> <span class="nv">$posts</span><span class="p">();</span>
 
-&lt;p&gt;Just add your classes like this
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{: .rounded .image}&lt;/code&gt;&lt;/p&gt;
+    <span class="nv">$filter</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nv">$filter</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"condition"</span> <span class="o">=&gt;</span> <span class="s2">"slug = '</span><span class="si">{</span><span class="nv">$slug</span><span class="si">}</span><span class="s2">'"</span><span class="p">,</span>
+                 <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"and"</span><span class="p">];</span>
+    <span class="nv">$filter</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"condition"</span> <span class="o">=&gt;</span> <span class="s2">"category = 'Holidays'"</span> <span class="p">,</span>
+                 <span class="s2">"type"</span> <span class="o">=&gt;</span> <span class="s2">"or"</span><span class="p">];</span>
+    
+    <span class="nv">$filter</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">buildFilter</span><span class="p">(</span><span class="nv">$filter</span><span class="p">);</span>
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;![alt text](logo.png &quot;Title&quot;)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;This will render out the image tag with the classes you specified.&lt;/p&gt;
+    <span class="nv">$posts</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="s2">"title,excerpt,slug,content"</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="nv">$filter</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">asResult</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;ready-set-lauch&quot;&gt;Ready Set Lauch&lt;/h2&gt;
-&lt;p&gt;Write, Build, Git Push and we’re off to a beautiful friendship.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Jekyll" /><summary type="html">I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.</summary></entry><entry><title type="html">Developer Analytics in Wakatime</title><link href="/workflow/2021/01/02/Tracking-code-Wakatime.html" rel="alternate" type="text/html" title="Developer Analytics in Wakatime" /><published>2021-01-02T00:00:00+02:00</published><updated>2021-01-02T00:00:00+02:00</updated><id>/workflow/2021/01/02/Tracking-code-Wakatime</id><content type="html" xml:base="/workflow/2021/01/02/Tracking-code-Wakatime.html">&lt;p&gt;I’ve been looking at ways to track overall time spent coding and dig deeper into where I spend time.&lt;/p&gt;
+<p>So here’s how I’ve tackled the issue of building out the filter conditions. I create a long string and add the Condition specified in the $filter array (above code).</p>
 
-&lt;h2 id=&quot;task-tracking-is-not-always-enough&quot;&gt;Task tracking is not always enough&lt;/h2&gt;
-&lt;p&gt;As a Freelancer I track time for projects short and long term but often feel that I want to get an overview. Especially when I’m working a few short term projects along side my longer term project work.&lt;/p&gt;
+<p>An important bit is that I don’t add the condition when the $where variable is empty.</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">function</span> <span class="nf">buildFilter</span><span class="p">(</span><span class="k">array</span> <span class="nv">$filters</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$where</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$filters</span> <span class="k">as</span> <span class="nv">$filter</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="p">(</span><span class="nv">$filter</span><span class="p">[</span><span class="s2">"type"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"and"</span><span class="p">)</span><span class="o">:</span>
+                <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$where</span><span class="p">))</span>
+                <span class="o">?</span> <span class="nv">$where</span> <span class="o">=</span> <span class="nv">$filter</span><span class="p">[</span><span class="s2">"condition"</span><span class="p">]</span> <span class="c1">//true don't add AND</span>
+                <span class="o">:</span> <span class="nv">$where</span> <span class="o">.=</span> <span class="s2">"AND </span><span class="si">{</span><span class="nv">$filter</span><span class="p">[</span><span class="s2">"condition"</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span> <span class="c1">//2nd value add the AND</span>
+                <span class="p">;</span>
+            <span class="k">case</span> <span class="p">(</span><span class="nv">$filter</span><span class="p">[</span><span class="s2">"type"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"or"</span><span class="p">)</span><span class="o">:</span>
+                <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$where</span><span class="p">))</span>
+                <span class="o">?</span> <span class="nv">$where</span> <span class="o">=</span> <span class="nv">$filter</span><span class="p">[</span><span class="s2">"condition"</span><span class="p">]</span>
+                <span class="o">:</span> <span class="nv">$where</span> <span class="o">.=</span> <span class="s2">"AND </span><span class="si">{</span><span class="nv">$filter</span><span class="p">[</span><span class="s2">"condition"</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+                <span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="nv">$where</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>That’s all there is to it.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="Tina4" /><summary type="html"><![CDATA[A normal ORM call in Tina4PHP includes a where function which is similar to what you may see in Laravel. However, the syntax more closely matches SQL. But once you have a lot of where conditions this becomes quite a long unwieldy line.]]></summary></entry><entry><title type="html">How much JS is enough?</title><link href="http://localhost:4000/frontend/2021/05/30/How-much-JS-is-enough.html" rel="alternate" type="text/html" title="How much JS is enough?" /><published>2021-05-30T00:00:00+02:00</published><updated>2021-05-30T00:00:00+02:00</updated><id>http://localhost:4000/frontend/2021/05/30/How-much-JS-is-enough</id><content type="html" xml:base="http://localhost:4000/frontend/2021/05/30/How-much-JS-is-enough.html"><![CDATA[<p>There’s been a growing trend towards Front-end JS frameworks in the past years. I think these frameworks have their uses. 
+But I don’t think Frameworks like React, Vue and Angular always make sense for every project. For me it all comes down to simplicity and getting work out the door close to budget.</p>
 
-&lt;h2 id=&quot;meet-wakatime&quot;&gt;Meet WakaTime&lt;/h2&gt;
-&lt;p&gt;I discovered WakaTime which is a great way of setting code goals to ensure that I spend more time coding. It helps me see when customer communication starts being too big a part of my work day. Since it intergrates directly into my IDE it’s a great fit.&lt;/p&gt;
+<p>In adopting VUE and REACT I’ve noticed that we’re effectively doing in JS what a Back-end language like Python, PHP, Node or Ruby would do rather well. 
+So effectively we’re duplicating the role and relegating the back-end to an API with a Database connection.</p>
 
-&lt;h3 id=&quot;coding-goals&quot;&gt;Coding goals&lt;/h3&gt;
-&lt;p&gt;Using WakaTime has allowed me to set Coding goals&lt;/p&gt;
+<p>So now we have routers and state etc all running in the front end. No matter how you spin it, running business logic in the front end is a bad idea. 
+As a result you’re going to need a bit of both on such a project to keep sensitive data out of your front-end code. On some projects this can make perfect sense.</p>
 
-&lt;h3 id=&quot;understand-what-you-code&quot;&gt;Understand what you code&lt;/h3&gt;
-&lt;p&gt;And it gives an interesting graph that shows what languages dominated your coding day.&lt;/p&gt;
+<p>Then we have the issue of State which becomes rather complex when you’re trying to run a webserver in the browser. All of which is perfectly liable to drive you to more abstraction.</p>
 
-&lt;p&gt;&lt;img src=&quot;../assets/images/
-wakatime-coding-stats.png&quot; alt=&quot;alt wakatime&quot; /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;heres-an-example-of-how-my-coding-time-was-split-today-youll-notice-other-here-which-was-spent-building-out-an-email-signature-for-a-client&quot;&gt;Here’s an example of how my coding time was split today. You’ll notice other here which was spent building out an email signature for a client.&lt;/h4&gt;
+<p>Then there’s the issue of how heavy things become after a bit. So if you’ve been writing a bit of VUE or REACT you reach a point where there’s too much JS to be practical.
+So you need to render down to HTML on the Server side and then just bring in dynamic bits. So effectively you’re using React and VUE as a backend and front-end language at that point.
+Unless you’re doing something rather special this is no different from using AJAX and a Back-end language. Except that you’ve now moved all your code into JS and added heaps of complexity into the mix.</p>
 
-&lt;h3 id=&quot;much-more&quot;&gt;Much more&lt;/h3&gt;
-&lt;p&gt;Waka time has much to offer and is a great way to monitor lots of coding metrics.&lt;/p&gt;
+<p>So am I saying front-end frameworks are bad? Not necessarily, but you do have to consider the budget implications of writing more code to do the same thing. For me the benefits don’t generally outweigh the cost of doing so just yet.</p>
 
-&lt;p&gt;Overall it’s good fun and highly reccomended.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Workflow" /><summary type="html">I’ve been looking at ways to track overall time spent coding and dig deeper into where I spend time.</summary></entry><entry><title type="html">Developer Analytics in Wakatime</title><link href="/workflow/2021/01/01/Social-Sharing.html" rel="alternate" type="text/html" title="Developer Analytics in Wakatime" /><published>2021-01-01T00:00:00+02:00</published><updated>2021-01-01T00:00:00+02:00</updated><id>/workflow/2021/01/01/Social-Sharing</id><content type="html" xml:base="/workflow/2021/01/01/Social-Sharing.html"></content><author><name>Barco van Rhijn</name></author><category term="Workflow" /><summary type="html"></summary></entry><entry><title type="html">Hello Ruby</title><link href="/ruby/2020/12/18/hello-Ruby.html" rel="alternate" type="text/html" title="Hello Ruby" /><published>2020-12-18T00:00:00+02:00</published><updated>2020-12-18T00:00:00+02:00</updated><id>/ruby/2020/12/18/hello-Ruby</id><content type="html" xml:base="/ruby/2020/12/18/hello-Ruby.html">&lt;p&gt;I’ve been hearing about Ruby for some years. But I’ve been sceptical about the amount of moving parts (Magic) that are introduced by Ruby in the process of development. So this year I decided to test it out for myself in the holidays.&lt;/p&gt;
+<h2 id="when-id-use-a-front-end-framework">When I’d use a front-end Framework</h2>
+<p>There are cases where a front-end framework makes complete sense.</p>
 
-&lt;p&gt;In 2020  I’ve built out a small Project in Laravel that handles Reseller packages and Pricing for B2B it feels familiar coming from the Javascript side of things. I also disovered that Laravel sort of combines ideas from JS and Ruby.&lt;/p&gt;
+<ul>
+  <li>You want a highly interactive site.</li>
+  <li>You’re not concerned with how much data your end user will need on his mobile phone. React and Vue make API calls just a bout every second. So unless you’re using GraphML you’re going to run up bill for your end user for sure.</li>
+  <li>You have a customer with a very large budget</li>
+  <li>You have a very large team</li>
+</ul>
 
-&lt;p&gt;One of the Developers I follow online mentioned what they’ve been doing on Ruby and I was intrigued to take a look. Well I spent a today and learned the basics.&lt;/p&gt;
+<h3 id="thoughts-on-vue">Thoughts on VUE</h3>
+<p>I’ve used React but have come to enjoy the syntactic sugar Vue adds on top of all this. In my opinion it’s the most approachable of the Front-end frameworks. 
+It’s ability to add interactivity in your code without taking over your codebase until unless a page’s complexity warrants it, is a sure win.</p>
 
-&lt;p&gt;So far I like that Ruby is similar in it’s abillity to scaffold various parts of an application. After learning how that works it no longer seems like a Ruby Project can spin out of control.&lt;/p&gt;
+<h2 id="when-id-just-drop-in-bits-of-js-for-interactivity">When I’d just drop in bits of JS for interactivity.</h2>
+<p>On an average project you may just need a little interactivity. Similar interactivity can be achieved with a little JS or Jquery or another JS library without making things more complex than they really need to be.</p>
 
-&lt;h1 id=&quot;what-i-like&quot;&gt;What I like&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;I like how easy CRUD is with Ruby - feels like Laravel.&lt;/li&gt;
-  &lt;li&gt;The stack feels less fragmented than JS stacks do.&lt;/li&gt;
-  &lt;li&gt;The language so far seems enjoyable.&lt;/li&gt;
-&lt;/ul&gt;
+<h2 id="conclusion">Conclusion</h2>
+<p>Each project is different, but in the end it comes down to what makes sense. If you are able to keep things simple you can deliver more of what the client wants and spend less time driving yourself to Abstraction.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="FrontEnd" /><summary type="html"><![CDATA[There’s been a growing trend towards Front-end JS frameworks in the past years. I think these frameworks have their uses. But I don’t think Frameworks like React, Vue and Angular always make sense for every project. For me it all comes down to simplicity and getting work out the door close to budget.]]></summary></entry><entry><title type="html">Tina4 we meet again</title><link href="http://localhost:4000/tina4/2021/04/06/Tina4-Deep-Dive.html" rel="alternate" type="text/html" title="Tina4 we meet again" /><published>2021-04-06T00:00:00+02:00</published><updated>2021-04-06T00:00:00+02:00</updated><id>http://localhost:4000/tina4/2021/04/06/Tina4-Deep-Dive</id><content type="html" xml:base="http://localhost:4000/tina4/2021/04/06/Tina4-Deep-Dive.html"><![CDATA[<p>A number of years have passed since I first saw the <a href="https://tina4.com/documentation">Tina4</a> stack. Tina4 officially strives not to be a framework. So rather call a collection of best practices for PHP but soon other languages as well.</p>
 
-&lt;h1 id=&quot;what-i-may-have-to-learn-to-love&quot;&gt;What I may have to learn to love&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Deployement of Ruby projects seem to be a bit more complicated than PHP but not so much more complicated than Node.js apps. I manage several VPS’ running production code. So It’s not insurmountable to deploy.&lt;/li&gt;
-&lt;/ul&gt;
+<p>I recall the Manga graphics and names to different sections of the code back in 2014 when I first saw Tina4.</p>
 
-&lt;h1 id=&quot;what-i-learned&quot;&gt;What I learned&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Intalling a Ruby Development environment
-Learned that this part of Ruby on Windows can be tricky and how to get it done.&lt;/li&gt;
-  &lt;li&gt;Ruby MVC and Project structure
-The Ruby project Structure is remarkably easy to understand coming from Laravel&lt;/li&gt;
-  &lt;li&gt;Routing with Ruby
-Routing uses&lt;/li&gt;
-  &lt;li&gt;Variables in Ruby
-Ruby variables are just words like in Bash unless you want to increase their scope. Variables passed from controller to page are written @variable&lt;/li&gt;
-  &lt;li&gt;Finding and Using Gems&lt;/li&gt;
-  &lt;li&gt;Defining production vs development gems&lt;/li&gt;
-  &lt;li&gt;Controllers in Ruby
-Controllers are&lt;/li&gt;
-  &lt;li&gt;Migrations and Databases in Ruby&lt;/li&gt;
-  &lt;li&gt;Production v.s. Development configs&lt;/li&gt;
-  &lt;li&gt;Creating CRUD forms in Ruby&lt;/li&gt;
-  &lt;li&gt;Add custom styling to Ruby elements&lt;/li&gt;
-  &lt;li&gt;Use Devise to create login and profile pages&lt;/li&gt;
-  &lt;li&gt;Database Associations&lt;/li&gt;
-  &lt;li&gt;Controllers beyond basic Crud&lt;/li&gt;
-  &lt;li&gt;Deploying Ruby code to git and Heroku&lt;/li&gt;
-&lt;/ul&gt;
+<p>I’ve been working with Andre van Zuydam full time for the past 3 weeks. In this time I’ve gotten to know Tina4 toolset up close.</p>
 
-&lt;p&gt;Planning to build out a first project over Tomorrow.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Ruby" /><summary type="html">I’ve been hearing about Ruby for some years. But I’ve been sceptical about the amount of moving parts (Magic) that are introduced by Ruby in the process of development. So this year I decided to test it out for myself in the holidays.</summary></entry><entry><title type="html">Vanilla PHP</title><link href="/php/2020/08/20/Vanilla-PHP.html" rel="alternate" type="text/html" title="Vanilla PHP" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>/php/2020/08/20/Vanilla-PHP</id><content type="html" xml:base="/php/2020/08/20/Vanilla-PHP.html">&lt;p&gt;A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.&lt;/p&gt;
+<p>One of the key things that I’ve found striking is that Tina4 does not abstract work unnecessarily by adding NPM scripts. There are some Composer scripts for most Tina4 tasks. Everything else is done either in the browser or in PHP. 
+Of course if you want to do Ajax you’ll need to write some JS.</p>
+<h2 id="whats-included">What’s included</h2>
+<p>Out of the box Tina4 includes quick ways to get you up and running in a lightweight way when you want to build a new PHP app. Its installable with Composer.</p>
 
-&lt;p&gt;We started building template engine that could be easily filled out with details to generate brand sites.&lt;/p&gt;
+<p>Talking about includes. Tina4 makes in unnecessary to add include lines in any of your files.</p>
 
-&lt;p&gt;I asked to do the front-end generating code. I was inspired by how Atomic Design systems worked and decided to build out a template engine with some overlapping features with Twigg. Since the requirements was that there be no dependancies I could not use Twigg or Handlebars or other such systems. 
-The project consisted of two parts. A UI that was customer facing and centrally manages all the site information and links. And the Template builder which connects to the API and parses the Json into arrays and then outputs this in a template. The API defines several settings that makes the Customer facing builder allow simple UI configurations.&lt;/p&gt;
+<h3 id="caching-by-default">Caching by default</h3>
+<p>Caching is included out the gate with PHP Fast Cache. There’s no config required.</p>
 
-&lt;p&gt;I discovered that some of what I wanted to do to make the templating more flexible is known as Meta programming. I discussed ways we could free the data model by moving to Json in Mysql or Mongodb. Because after the first few days it became apparent that each new change.&lt;/p&gt;
+<h3 id="sass-support">SASS Support</h3>
+<p>No need to add extra build scripts unless you’re building very complex SASS hierarchies. Drop you SASS in the SASS directory and run your APP. Your SASS builds to CSS without extra commandline tasks to manage.</p>
 
-&lt;p&gt;In the process of doing the work I decided to learn how to build unit tests in PHP. I’ve just touched on the basics of doing this in Javascript after what I’d learned in FreeCodeCamp. But I’d not used this in PHP yet. In the past I’d mostly customized PHP code or written plugins which did not have enough code to make Unit tests a viable option. 
-When I asked the developer I worked with it turned out that he had not used PHPUnit before so I was on my own with this.&lt;/p&gt;
+<h3 id="migrations">Migrations</h3>
+<p>Migrations in Tina4 are brought right back to SQL. It’s been a pain point to me that many frameworks so abstract migrations that people forget that they are working with SQL.</p>
 
-&lt;p&gt;taking on a Vanilla PHP project for a client. In 3 Weeks I coded up my first php from scratch project in Vanilla PHP and produced a minimum viable product as part of an attempt to partner up with senior PHP developer. The 3 weeks was valuable experience but the partnership was not well matched. When comparing notes I was producing 6months of output in 3weeks compared to the other dev’s output. I had started with a blank canvas and PHP documentation and 5min worth of Sage advice.&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="PHP" /><summary type="html">A Senior PHP developer approached me about collaborating on a Vanilla PHP project. His requirement was for us to work according to his php standard.</summary></entry><entry><title type="html">Html Part 5</title><link href="/2020/01/19/HTML-Part-5.html" rel="alternate" type="text/html" title="Html Part 5" /><published>2020-01-19T00:00:00+02:00</published><updated>2020-01-19T00:00:00+02:00</updated><id>/2020/01/19/HTML-Part-5</id><content type="html" xml:base="/2020/01/19/HTML-Part-5.html">&lt;p&gt;Make Screen Reader Navigation Easier with the header Landmark		Jan 19, 2019
-Wrap Content in the article Element		Jan 19, 2019
-Improve Chart Accessibility with the figure Element		Jan 19, 2019
-Improve Accessibility of Audio Content with the audio Element		Jan 19, 2019
-Make Screen Reader Navigation Easier with the footer Landmark		Jan 19, 2019
-Make Screen Reader Navigation Easier with the nav Landmark		Jan 19, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html">Make Screen Reader Navigation Easier with the header Landmark Jan 19, 2019 Wrap Content in the article Element Jan 19, 2019 Improve Chart Accessibility with the figure Element Jan 19, 2019 Improve Accessibility of Audio Content with the audio Element Jan 19, 2019 Make Screen Reader Navigation Easier with the footer Landmark Jan 19, 2019 Make Screen Reader Navigation Easier with the nav Landmark Jan 19, 2019</summary></entry><entry><title type="html">Js 2</title><link href="/2019/08/13/JS-2.html" rel="alternate" type="text/html" title="Js 2" /><published>2019-08-13T00:00:00+02:00</published><updated>2019-08-13T00:00:00+02:00</updated><id>/2019/08/13/JS-2</id><content type="html" xml:base="/2019/08/13/JS-2.html">&lt;p&gt;Storing Values with the Assignment Operator		Aug 13, 2019
-Declare JavaScript Variables		Aug 13, 2019
-Comment Your JavaScript Code		Aug 13, 2019
-Appending Variables to Strings		Aug 13, 2019
-Constructing Strings with Variables		Aug 13, 2019
-Concatenating Strings with the Plus Equals Operator		Aug 13, 2019
-Concatenating Strings with Plus Operator		Aug 13, 2019
-Quoting Strings with Single Quotes		Aug 13, 2019
-Escaping Literal Quotes in Strings		Aug 13, 2019
-Declare String Variables		Aug 13, 2019
-Compound Assignment With Augmented Division		Aug 13, 2019
-Compound Assignment With Augmented Multiplication		Aug 13, 2019
-Compound Assignment With Augmented Subtraction		Aug 13, 2019
-Compound Assignment With Augmented Addition		Aug 13, 2019
-Finding a Remainder in JavaScript		Aug 13, 2019
-Understanding Case Sensitivity in Variables		Aug 13, 2019
-Understanding Uninitialized Variables		Aug 13, 2019
-Initializing Variables with the Assignment Operator		Aug 13, 2019
-Manipulate Arrays With unshift()		Aug 13, 2019
-Manipulate Arrays With shift()		Aug 13, 2019
-Manipulate Arrays With push()		Aug 13, 2019
-Access Multi-Dimensional Arrays With Indexes		Aug 13, 2019
-Modify Array Data With Indexes		Aug 13, 2019
-Access Array Data with Indexes		Aug 13, 2019
-Nest one Array within Another Array		Aug 13, 2019
-Store Multiple Values in one Variable using JavaScript Arrays		Aug 13, 2019
-Word Blanks		Aug 13, 2019
-Use Bracket Notation to Find the Nth-to-Last Character in a String		Aug 13, 2019
-Use Bracket Notation to Find the Last Character in a String		Aug 13, 2019
-Use Bracket Notation to Find the Nth Character in a String		Aug 13, 2019
-Understand String Immutability		Aug 13, 2019
-Use Bracket Notation to Find the First Character in a String		Aug 13, 2019
-Find the Length of a String		Aug 13, 2019
-Comparison with the Strict Equality Operator		Aug 13, 2019
-Comparison with the Equality Operator		Aug 13, 2019
-Use Conditional Logic with If Statements		Aug 13, 2019
-Understanding Boolean Values		Aug 13, 2019
-Stand in Line		Aug 13, 2019
-Assignment with a Returned Value		Aug 13, 2019
-Manipulate Arrays With pop()		Aug 13, 2019
-Understanding Undefined Value returned from a Function		Aug 13, 2019
-Return a Value from a Function with Return		Aug 13, 2019
-Global vs. Local Scope in Functions		Aug 13, 2019
-Local Scope and Functions		Aug 13, 2019
-Global Scope and Functions		Aug 13, 2019
-Passing Values to Functions with Arguments		Aug 13, 2019
-Write Reusable JavaScript with Functions		Aug 13, 2019
-Shopping List		Aug 13, 2019
-Selecting from Many Options with Switch Statements		Aug 13, 2019
-Golf Code		Aug 13, 2019
-Chaining If Else Statements		Aug 13, 2019
-Logical Order in If Else Statements		Aug 13, 2019
-Introducing Else If Statements		Aug 13, 2019
-Introducing Else Statements		Aug 13, 2019
-Comparisons with the Logical Or Operator		Aug 13, 2019
-Comparisons with the Logical And Operator		Aug 13, 2019
-Comparison with the Less Than Or Equal To Operator		Aug 13, 2019
-Comparison with the Less Than Operator		Aug 13, 2019
-Comparison with the Greater Than Or Equal To Operator		Aug 13, 2019
-Comparison with the Greater Than Operator		Aug 13, 2019
-Comparison with the Strict Inequality Operator		Aug 13, 2019
-Comparison with the Inequality Operator		Aug 13, 2019
-Practice comparing different values		Aug 13, 2019
-Testing Objects for Properties		Aug 13, 2019
-Using Objects for Lookups		Aug 13, 2019
-Delete Properties from a JavaScript Object		Aug 13, 2019
-Add New Properties to a JavaScript Object		Aug 13, 2019
-Updating Object Properties		Aug 13, 2019
-Accessing Object Properties with Variables		Aug 13, 2019
-Accessing Object Properties with Bracket Notation		Aug 13, 2019
-Accessing Object Properties with Dot Notation		Aug 13, 2019
-Build JavaScript Objects		Aug 13, 2019
-Counting Cards		Aug 13, 2019
-Return Early Pattern for Functions		Aug 13, 2019
-Returning Boolean Values from Functions		Aug 13, 2019
-Replacing If Else Chains with Switch		Aug 13, 2019
-Multiple Identical Options in Switch Statements		Aug 13, 2019
-Adding a Default Option in Switch Statements		Aug 13, 2019
-Escape Sequences in Strings		Aug 13, 2019
-Iterate Through an Array with a For Loop		Aug 13, 2019
-Count Backwards With a For Loop		Aug 13, 2019
-Iterate Odd Numbers With a For Loop		Aug 13, 2019
-Iterate with JavaScript For Loops		Aug 13, 2019
-Iterate with JavaScript While Loops		Aug 13, 2019
-Record Collection		Aug 13, 2019
-Accessing Nested Arrays		Aug 13, 2019
-Accessing Nested Objects		Aug 13, 2019
-Manipulating Complex Objects		Aug 13, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Javascript</title><link href="/javascript/2019/08/01/JS.html" rel="alternate" type="text/html" title="Javascript" /><published>2019-08-01T00:00:00+02:00</published><updated>2019-08-01T00:00:00+02:00</updated><id>/javascript/2019/08/01/JS</id><content type="html" xml:base="/javascript/2019/08/01/JS.html">&lt;p&gt;So while digging into React I’ve decided to ensure I have as complete an understading of JS as possible.&lt;/p&gt;
+<p>In Tina4 you write your migrations in the browser which creates the required migration files that create a record in the migration database. Execute migrations by calling a migration endpoint in your browser. You see the output directly. Migration files are editable since they really only contain the SQL you entered the browser.
+If you can write SQL you can do migrations immediately. This is a benefit that is easily overlooked unless you’ve felt the contortion caused by Frameworks that abstract migrations and other bits for the sake of abstraction.</p>
 
-&lt;p&gt;So I’m digging into JS fundimentals&lt;/p&gt;
+<h3 id="env-support">ENV Support</h3>
+<p>Naturally any modern workflow needs ENV support out the box.</p>
 
-&lt;p&gt;Divide One Decimal by Another with JavaScript		Aug 1, 2019
-Multiply Two Decimals with JavaScript		Aug 1, 2019
-Create Decimal Numbers with JavaScript		Aug 1, 2019
-Decrement a Number with JavaScript		Aug 1, 2019
-Increment a Number with JavaScript		Aug 1, 2019
-Divide One Number by Another with JavaScript		Aug 1, 2019
-Multiply Two Numbers with JavaScript		Aug 1, 2019
-Subtract One Number from Another with JavaScript		Aug 1, 2019
-Add Two Numbers with JavaScript		Aug 1, 2019&lt;/p&gt;</content><author><name>Barco van Rhijn</name></author><category term="Javascript" /><summary type="html">So while digging into React I’ve decided to ensure I have as complete an understading of JS as possible.</summary></entry><entry><title type="html">Form Accesibility</title><link href="/2019/01/22/Form-Accesibility.html" rel="alternate" type="text/html" title="Form Accesibility" /><published>2019-01-22T00:00:00+02:00</published><updated>2019-01-22T00:00:00+02:00</updated><id>/2019/01/22/Form-Accesibility</id><content type="html" xml:base="/2019/01/22/Form-Accesibility.html">&lt;p&gt;Improve Form Field Accessibility with the label Element		Mar 22, 2019&lt;/p&gt;</content><author><name></name></author><summary type="html">Improve Form Field Accessibility with the label Element Mar 22, 2019</summary></entry></feed>
+<h3 id="routes">Routes</h3>
+<p>Routes can be written in different files as long as they are stored in the Routes directory even if they are sorted in subdirectories. This makes managing routes much simpler in practice.</p>
+
+<p>Routing in Tina4 is similar to what you’d get to know in Frameworks like Laravel. You should remember that Tina4 is a much lighter stack in kb not features.</p>
+
+<h3 id="orm">ORM</h3>
+<p>The Tina4 ORM supports Firebird, Mysql, Sqlite right out the gate. So expect very similar syntax for each Database you interface with</p>
+
+<p>If you write your database column names according to convention then you get to include very minimal information in an ORM class.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$firstName = "Bob"
+$user = (new User())-&gt;select("*")
+                    -&gt;from("user")
+                    -&gt;where("first_name = {$firstName}")
+                    -&gt;asArray();
+                    
+</code></pre></div></div>
+
+<h3 id="api">API</h3>
+<p>Consuming and generating API’s are easy in Tina4.</p>
+
+<h4 id="consuming-api">Consuming API</h4>
+<p>Tina4 Comes with API functions that make consuming rest endpoints as simple as can be. Even easier than using Javascript Fetch(). And you can still use JS Fetch if it catches your fancy.</p>
+
+<h4 id="creating-an-api">Creating an API</h4>
+<p>Tina4 comes with a one line CRUD generator that you include in a new API endpoint file. Once you fire up the app in the browser Tina4 scaffolds all the crud routes for an ORM Object onto the API endpoint of your choice. 
+One line of code, and your API works out the box. It’s all still written in PHP.</p>
+
+<p>ORM classes cleverly extends to CRUD routes that are widely used in Tina4 to create API’s with a single line of code.
+A CRUD route is linked to an ORM object, if you post a form containing inputs that match the ORM fields you don’t need to write any code to create or update records.
+This works so seamlessly that at first glance it almost feels like magic.</p>
+
+<h3 id="templates">Templates</h3>
+<p>Templates are elegantly integrated in Tina4 using Symphony’s Twig template engine with some custom work where it matters.</p>
+
+<p>Templates can run without any routing if there is no route with the same name. This makes for convenient testing and less hassle when you have a route that really only serves up a page.</p>
+
+<h3 id="html-functions">HTML Functions</h3>
+<p>Tina4 includes a library of php functions that can generate HTML right out the box.</p>
+
+<p>There’s an underscored function for every HTML class imaginable. So you literally can generate valid HTML from code</p>
+
+<h3 id="admin-dashboard">Admin Dashboard</h3>
+<p>Tina4CMS is probably the best kept secret when it comes to Tina4. It creates a fully functional Admin Dashboard with minimal lines of code. 
+You get Templates and Crud Grids generated with create, edit, delete, search and export out the gate.</p>
+
+<p>Login is included as well out the box to get your Admin Dash functional as soon as possible. With a little tweaking your Admin dashboard works exactly like you want it.</p>
+
+<h3 id="ajax">Ajax</h3>
+<p>Tina4 comes with a JS helper library to post and get page parts, modals and more from api endpoints</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Simplicity is the ultimate complexity. Tina4 is a flexible and rapid starting point to any PHP project. As I’ve worked with it I’m fascinated by how simple Tina4 makes things that are often very complex in the PHP world.</p>
+
+<p>If you’ve been frustrated with how Frameworks abstract things away too far, Tina4 is a good place to invest your time. 
+There’s a Slack group where the community join in and ask and answer questions. Along with Documentation on how Tina4 works.</p>
+
+<p>I’ve been contributing to expanding the documentation in the past 3weeks.</p>
+
+<p>I’ll be posting some insights on the blog. So keep an eye for more on this soon.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="Tina4" /><summary type="html"><![CDATA[A number of years have passed since I first saw the Tina4 stack. Tina4 officially strives not to be a framework. So rather call a collection of best practices for PHP but soon other languages as well.]]></summary></entry><entry><title type="html">Email Template design</title><link href="http://localhost:4000/email/2021/03/05/Email-Templates.html" rel="alternate" type="text/html" title="Email Template design" /><published>2021-03-05T00:00:00+02:00</published><updated>2021-03-05T00:00:00+02:00</updated><id>http://localhost:4000/email/2021/03/05/Email-Templates</id><content type="html" xml:base="http://localhost:4000/email/2021/03/05/Email-Templates.html"><![CDATA[<p>Email template design has always been a particularly tricky spot when it comes to mail client support.</p>
+
+<p>Recently a client asked me to design them a template for a signature with complex overlapping images. On the web that’s a very easy thing to do. But in the email space layers are poorly supported.</p>
+
+<h2 id="quirky-mail-clients">Quirky Mail clients</h2>
+
+<p>Even after years I still find it odd that mail clients have grown more quirky in their support of web standards. We’re all still coding like it’s the late 90’s for email.</p>
+
+<p>It’s 2021 and we’re really in need more modern features on email clients. But the thing we need most is standardized support between mail clients.</p>
+
+<p>Interestingly Mozilla just dropped several critical CSS features that enabled responsive designs. So Responsive mail now gets to display in mobile view on Thunderbird. Luckily that’s a small portion of the market right now.</p>
+
+<p>Outlook has also not grown as much as I’d hoped over the past decade. But clearly still takes the lead on the Desktop front.</p>
+
+<p>Although the recent widespread Exchange server hacks gives reason for pause if you where the admin. But I digress.</p>
+
+<h2 id="should-i-embed-link-attach-that-image">Should I embed, link, attach that image?</h2>
+
+<p>Most notably embedding, attaching or linking images is supported by differently accross email clients with links being best supported and most hidden due to “privacy warnings”.</p>
+
+<h2 id="kiss">KISS</h2>
+
+<p>Bottom line. When it comes to email design you can go to the moon and back if you’ve got the budget. Otherwise keeping to highly supported simpler layouts will come back in budget every time.</p>
+
+<p>This reminds me of a good project principle.</p>
+
+<blockquote>
+  <p>Cheap, Good, Fast. Pick two.</p>
+</blockquote>
+
+<h2 id="some-neat-posibillities">Some neat posibillities</h2>
+
+<p>I do still create some pretty neat things these days in email though, like including sliders and menus and faq sections in mail. And buttons that work right out the gate. So it’s not all lost.</p>
+
+<p>However my most favorite email feature is still conscise writing and good formatting. Without this foundation it’s pretty hard to build a good mail.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="Email" /><summary type="html"><![CDATA[Email template design has always been a particularly tricky spot when it comes to mail client support.]]></summary></entry><entry><title type="html">SEO in a mobile first world</title><link href="http://localhost:4000/seo/2021/03/04/seo-mobile-first-world.html" rel="alternate" type="text/html" title="SEO in a mobile first world" /><published>2021-03-04T00:00:00+02:00</published><updated>2021-03-04T00:00:00+02:00</updated><id>http://localhost:4000/seo/2021/03/04/seo-mobile-first-world</id><content type="html" xml:base="http://localhost:4000/seo/2021/03/04/seo-mobile-first-world.html"><![CDATA[<p>It’s official! Mobile Performance affects rankings. Since Jan 2020 Google now considers the mobile view of your page as a large factor to your SEO score.</p>
+
+<p>This is hardly surprising since so many users browse the web from their phones.</p>
+
+<h3 id="recent-case-study">Recent case study</h3>
+
+<p>On a recent e-Commerce project the statistic was close to 90% of visitors.</p>
+
+<h3 id="conversion-still-a-challenge">Conversion still a challenge</h3>
+
+<p>Obviously this is hard to ignore although conversion on mobile is an interesting thing to consider with such limited screen space.</p>
+
+<p>And the fact that mobile only users are often only slightly Digitally literate.</p>
+
+<p>All people muddle their way through the web but when it comes to Mobile users they are the ultimate muddlers from my observation.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>So as of 2021 if you’re site performs poorly on mobile it will start affecting your rankings negatively.</p>
+
+<p>It’s clearly time to rethink &amp; rework out Apps and Sites. While we at it a good dose of UX wouldn’t hurt SEO or users either.</p>
+
+<p>Just my two cents…</p>]]></content><author><name>Barco van Rhijn</name></author><category term="SEO" /><summary type="html"><![CDATA[It’s official! Mobile Performance affects rankings. Since Jan 2020 Google now considers the mobile view of your page as a large factor to your SEO score.]]></summary></entry><entry><title type="html">Delving into TypeScript - first impressions</title><link href="http://localhost:4000/typescript/2021/02/22/TypeScript-Diving-Deeper.html" rel="alternate" type="text/html" title="Delving into TypeScript - first impressions" /><published>2021-02-22T00:00:00+02:00</published><updated>2021-02-22T00:00:00+02:00</updated><id>http://localhost:4000/typescript/2021/02/22/TypeScript%20Diving%20Deeper</id><content type="html" xml:base="http://localhost:4000/typescript/2021/02/22/TypeScript-Diving-Deeper.html"><![CDATA[<p>I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.</p>
+
+<p>I’ve always liked the concise syntax to VueJs over ReactJs so I decided to give the two a go together.</p>
+
+<p>Some early previews of the app working with working API intergration.
+<img src="assets/images/picking-screen.png" alt="alt Work Picking Screen" />
+<img src="assets/images/screenshot_2021-01-18-app.png" alt="alt Work Overview" /></p>
+
+<h2 id="ionic-vue-comes-with-ts">Ionic Vue comes with TS</h2>
+<p>So with VueJS and Ionic came a recommendation to keep Typescript. And so my journey began Mid Jan 2021 with types.</p>
+
+<p>It’s not been all love at first bite but after delving into a 60min crash course I’ve been able to survive the first few days. The promised gains seem worth the pain.</p>
+
+<p>My first few days have come with intense pain though. After coding for a few days I kept running into Type errors that I did not quite know how to solve.</p>
+
+<p>Initially it seemed that TS is the roadblock to getting any code to work. I’d write out perfect JS and it would fall on it’s face every time. Test it outside of TS and it works flawlessly.</p>
+
+<p>And after spending a few days chasing Type errors I decided to dig deeper as there has to be something I missed initially.</p>
+
+<h2 id="a-few-lessons-learned">A few lessons learned</h2>
+
+<h3 id="run-time-errors-with-ts-and-ionic-sometimes-show-skewed-line-numbers">Run-time errors with TS and Ionic sometimes show skewed line numbers.</h3>
+<p>This seems to be a current bug relating to SFC in VueJS. My Temporary work around has been to code with hot reload and fix errors immediately before proceeding. It’s a better way of coding that leads to better productivity any way.</p>
+
+<h3 id="git-is-your-friend">Git is your friend</h3>
+<p>When line numbers go fuzzy and minutes go by. It’s often easier to revert a small change and start it again. Since we’ve got git might as well put it to good use.</p>
+
+<h3 id="types-are-easy">Types are easy</h3>
+<p>The fundamentals of Types are not hard. But you need to give you brain some time to absorb the implications in code.</p>
+
+<p>Most of TS is really just JS and you can actually partially implement TS in a project.</p>
+
+<p>Essentially Types are a way of documenting expected data types and values for</p>
+<ul>
+  <li>variables</li>
+  <li>arrays</li>
+  <li>objects.</li>
+</ul>
+
+<p>There’s much debate around this but the simplest way is that you should only use Interfaces for Objects. For all the rest use type definitions.</p>
+
+<h3 id="bypass-types-in-a-pinch">Bypass Types in a pinch</h3>
+<p>In a pinch you can define the type as Any. But this should be used with caution as it sort of negates the benefits of using TS in the first place.</p>
+
+<h2 id="sage-advice">Sage Advice</h2>
+<p>As a Senior Ionic Dev pointed out types are mostly inferred in Ionic and you’ll run into type issues if you’re trying to do something too radical.</p>
+
+<h2 id="wrap-it-up">Wrap it up</h2>
+<p>Looking forward to seeing how TS will improve my development experience. I already enjoy the variable hinting TS introduces in VS Code.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="TypeScript" /><summary type="html"><![CDATA[I discovered recently that Ionic have made VueJs quite a priority on their development line-up. And since I’ve got a new project lined up I decided to dig in and see what they’ve got.]]></summary></entry><entry><title type="html">Booting up my personal Blog</title><link href="http://localhost:4000/jekyll/2021/01/15/Booting-up-my-blog.html" rel="alternate" type="text/html" title="Booting up my personal Blog" /><published>2021-01-15T00:00:00+02:00</published><updated>2021-01-15T00:00:00+02:00</updated><id>http://localhost:4000/jekyll/2021/01/15/Booting-up-my-blog</id><content type="html" xml:base="http://localhost:4000/jekyll/2021/01/15/Booting-up-my-blog.html"><![CDATA[<p>I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.</p>
+
+<p>So Here goes….</p>
+
+<h2 id="github-meet-jekyl">Github, Meet Jekyl</h2>
+<p>To get a Github pages site up you need to start a repo with your username.githubpages.com. You’ll find the the <a href="https://pages.github.com/"> getting started with github pages </a>.</p>
+
+<h2 id="can-you-say-jekyll">Can you say Jekyll?</h2>
+<p>This site is based of Jekyll which is a Jamstack site framework built with Ruby on Rails. It’s Github’s recommended default although you can use things like Hugo or others. I like the simplicity of Jekyll which allows for maximum design expression with little fuss.</p>
+
+<p>Jekyll speaks HTML, Markdown, JSON and more. It’s a fantastic way to get technical content up if you don’t need a back-end.</p>
+
+<h2 id="where-do-i-put-images-in-jekyll">Where do I put images in Jekyll</h2>
+<p>Under the main Assets folder. The _site folder is generated on build in Jekyll.</p>
+
+<h2 id="adding-classes-in-jekyll-markdown">Adding classes in Jekyll Markdown</h2>
+
+<p>Just add your classes like this</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .rounded .image}
+
+![alt text](logo.png "Title")
+</code></pre></div></div>
+
+<p>This will render out the image tag with the classes you specified.</p>
+
+<h2 id="ready-set-launch">Ready Set Launch</h2>
+<p>Write, Build, Git Push and we’re off to a beautiful friendship.</p>]]></content><author><name>Barco van Rhijn</name></author><category term="Jekyll" /><summary type="html"><![CDATA[I’ve been keeping notes of projects for some time. And have meant to publish this for the benefits of others to learn from some of the experiences I’ve had. And to share some of my though process.]]></summary></entry></feed>

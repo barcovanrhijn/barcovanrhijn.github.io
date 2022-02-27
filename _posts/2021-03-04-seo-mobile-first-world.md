@@ -5,9 +5,7 @@ author: Barco van Rhijn
 category: SEO
 ---
 
-## Mobile Performance affects rankings
-
-It's official! Since Jan 2020 Google now considers the mobile view of your page as a large factor to your SEO score.
+It's official! Mobile Performance affects rankings. Since Jan 2020 Google now considers the mobile view of your page as a large factor to your SEO score.
 
 This is hardly surprising since so many users browse the web from their phones. 
 

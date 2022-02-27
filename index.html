@@ -2,21 +2,62 @@
 layout: default
 title: Home
 ---
-<h1>Hi, I'm Barco -  Nice to meet you</h1>
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <h1>Latest Posts</h1>
 
-<h2>I'm a polyglot Developer</h2>
-I work in PHP, JS and Python, Bash, Ansible, Docker and more.
-I enjoy working in different languages and technologies and work as a Full Stack Web Developer.
-<br/>
-This is my personal blog where I share things that I'm thinking about. 
+            {% for post in site.posts limit: 10 %}
+              <h2 class="mt-2"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              {{ post.excerpt }}
+            {% endfor %}
 
-<h1>Latest Posts</h1>
+          <a class="is-but" href="blog.html"><button class="button is-medium is-warning is-pulled-right">See all posts</button></a>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <h1>Hi, I'm Barco -  Nice to meet you</h1>
+
+        <h2>I'm a polyglot Developer</h2>
+        I work in PHP, JS and Python, Bash, Ansible, Docker and more.
+        I enjoy working in different languages and technologies and work as a Full Stack Web Developer.
+        <br/>
+        This is my personal blog where I share things that I'm thinking about.
+        </div>
+      </article>
+    </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Categories</p>
+
+        <div id="archives">
+          {% for category in site.categories %}
+          <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <div id="#{{ category_name | slugize }}"></div>
+
+            <h3 class="category-head">{{ category_name }}</h3>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+              <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+            </article>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+
+

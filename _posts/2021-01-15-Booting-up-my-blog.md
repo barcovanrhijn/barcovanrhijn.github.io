@@ -23,9 +23,11 @@ Under the main Assets folder. The _site folder is generated on build in Jekyll.
 ## Adding classes in Jekyll Markdown
 
 Just add your classes like this
-``{: .rounded .image}``
+```
+{: .rounded .image}
 
-``![alt text](logo.png "Title")``
+![alt text](logo.png "Title")
+```
 
 This will render out the image tag with the classes you specified.
 

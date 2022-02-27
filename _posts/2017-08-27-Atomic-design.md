@@ -2,7 +2,7 @@
 title: Atomic Design
 layout: post
 author: Barco van Rhijn
-category: Design
+category: FrontEnd
 ---
 
 I’ve recently enjoyed learning about Atomic design. It’s really broadened my thinking in terms of how I plan out design. 

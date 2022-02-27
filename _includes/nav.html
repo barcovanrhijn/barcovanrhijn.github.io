@@ -1,7 +1,22 @@
-<nav>
-  {% for item in site.data.nav %}
-  <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-    {{ item.name }}
-  </a> 
-  {% endfor %}
-  </nav>
+<div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarTop">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
+  <div id="navBarTop" class="navbar-menu has-background-primary">
+    <div class="navbar-start">
+
+      {% for item in site.data.nav %}
+      <a class="navbar-item" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</nav>
+</div>
