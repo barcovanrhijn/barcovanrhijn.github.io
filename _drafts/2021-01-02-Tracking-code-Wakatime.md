@@ -26,4 +26,4 @@ wakatime-coding-stats.png)
 ### Much more
 Waka time has much to offer and is a great way to monitor lots of coding metrics.
 
-Overall it's good fun and highly reccomended.
+Overall it's good fun and highly recommended.

@@ -10,7 +10,7 @@ I've been meaning to run a Radius server for some time now. I toyed with this ba
 So I'm back and my initial need is to get something up that will help with better Wifi Authentication. 
 A new lockdown reality is that Wifi is something people want to steal actively for fun. 
 
-I've hardend out the local gear and am now looking for an additional layer of protection. 
+I've hardened out the local gear and am now looking for an additional layer of protection.
 
 Meet FreeRadius. A simple idea with many moving parts to accomplish simply put Authentication, Authorization and Accounting. 
 
